@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_search_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/search_layout_input_box_left_margin"
+        android:layout_marginRight="@dimen/search_layout_input_box_right_margin"
+        android:layout_marginTop="@dimen/search_layout_input_box_top_margin"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_layout_input_box_height_old"
+            android:background="@drawable/navi_search_bg">
+
+            <!-- 搜索输入框 -->
+
+            <TextView
+                android:id="@+id/txtSearchInput"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/btnQRCode"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/search_left_logo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignLeft="@id/txtSearchInput"
+                android:layout_centerVertical="true"
+                android:paddingRight="9dip"
+                android:scaleType="centerInside"
+                android:src="@drawable/black_search_btn_selector" />
+
+            <TextSwitcher
+                android:id="@+id/navi_search_text_switcher"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:focusable="false"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="14dip"
+                android:layout_toRightOf="@+id/search_left_logo"
+                android:background="#00000000"
+                android:gravity="left|center"
+                android:textColor="#ffa9a9a9"
+                android:textSize="17.0sp" />
+
+            <ImageView
+                android:id="@+id/btnVoice"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/navi_search_box_sep"
+                android:paddingBottom="8dp"
+                android:paddingLeft="6dp"
+                android:paddingRight="1dp"
+                android:paddingTop="8dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/launcher_navigation_btn_voice"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/navi_search_box_sep"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/navi_qrcode"
+                android:background="@drawable/navi_vertical_sep" />
+
+            <!-- 扫描二维码按钮 -->
+
+            <ImageView
+                android:id="@+id/navi_qrcode"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="4dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/navigation_qrcode_btn" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

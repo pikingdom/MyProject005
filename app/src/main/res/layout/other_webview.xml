@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <!-- 桌面内置浏览器首页 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launcher_navigation_pandahome_browser_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myphone_common_bg_color"
+    android:orientation="vertical" >
+
+    <!-- 输入框 -->
+
+
+    <!--
+        <LinearLayout
+        android:id="@+id/launcher_navigation_pandahome_browser_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:background="@color/navigation_search_bg"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dip">
+
+                &lt;!&ndash; 搜索输入框 &ndash;&gt;
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical">
+
+                    <EditText
+                        android:id="@+id/launcher_navigation_pandahome_browser_searchinput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/navigation_search_edittext_bg"
+                        android:hint="@string/launcher_navigation_pandahome_browser_searchinput_hint"
+                        android:inputType="text"
+                        android:paddingLeft="50dip"
+                        android:paddingRight="88dip"
+                        android:textColor="#ff545454"
+                        android:textColorHint="#ffc6c6c6"
+                        android:textSize="18sp" />
+
+                    &lt;!&ndash; 语音识别按钮 &ndash;&gt;
+
+                    &lt;!&ndash;<ImageView&ndash;&gt;
+                        &lt;!&ndash;android:id="@+id/launcher_navigation_pandahome_browser_btnvoice"&ndash;&gt;
+                        &lt;!&ndash;android:layout_width="25dp"&ndash;&gt;
+                        &lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;
+                        &lt;!&ndash;android:layout_gravity="right|center_vertical"&ndash;&gt;
+                        &lt;!&ndash;android:layout_marginRight="62dip"&ndash;&gt;
+                        &lt;!&ndash;android:src="@drawable/launcher_navigation_top_voice"&ndash;&gt;
+                        &lt;!&ndash;android:visibility="invisible" />&ndash;&gt;
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|right"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/launcher_navigation_pandahome_browser_btnclean_searchinput"
+                        android:layout_width="30dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dip"
+                        android:src="@drawable/navigation_search_clear_btn"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/launcher_navigation_pandahome_browser_btnsearch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/navigation_search_btn"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:background="@drawable/navigation_search_image" />
+                    </LinearLayout>
+                </LinearLayout>
+                &lt;!&ndash; 退出 &ndash;&gt;
+                <LinearLayout
+                    android:id="@+id/launcher_navigation_pandahome_browser_exit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginTop="4dip"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/launcher_navigation_pandahome_browser_exit_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/launcher_edit_theme_back_selector" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/navigation_search_parting_line" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/launcher_navigation_pandahome_browser_operate_bar" >
+
+        <!-- 历史记录展示界面 -->
+
+        <ListView
+            android:id="@+id/launcher_navigation_pandahome_history"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="11dp"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/navigation_search_bg"
+            android:dividerHeight="1dip"
+            android:listSelector="#00000000"
+            android:visibility="gone" />
+
+        <!-- 视频搜索和网页搜索 -->
+        <!-- <ScrollView -->
+        <!-- android:id="@+id/launcher_navigation_pandahome_browser_scrollview" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent"> -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- inapp展示界面 -->
+
+            <LinearLayout
+                android:id="@+id/launcher_navigation_pandahome_inapp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <!-- 无网络展示界面 -->
+
+            <LinearLayout
+                android:id="@+id/launcher_navigation_pandahome_browser_nonetwork"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/launcher_navigation_pandahome_browser"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <!-- &lt;!&ndash; 视频搜索界面 &ndash;&gt; -->
+
+
+                <!-- <include -->
+                <!-- android:id="@+id/launcher_navigation_pandahome_browser_inapp" -->
+                <!-- layout="@layout/launcher_navigation_pandahome_browser_inappcard" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:layout_alignParentTop="true" -->
+                <!-- android:visibility="gone" /> -->
+
+
+                <!-- 网页搜索界面 -->
+
+                <LinearLayout
+                    android:id="@+id/launcher_navigation_pandahome_browser_web"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/launcher_navigation_pandahome_browser_inapp"
+                    android:orientation="vertical" >
+
+                    <com.nd.hilauncherdev.plugin.navigation.activity.OtherWebView
+                        android:id="@+id/custom_webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- </ScrollView> -->
+        <!-- 进度条 -->
+
+        <ProgressBar
+            android:id="@+id/launcher_navigation_pandahome_browser_web_progressbar_dx"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/webview_progressbar_progress_horizontal1" />
+
+        <LinearLayout
+            android:id="@+id/wait_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progress_small_title"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/dx_theme_shop_v6_loading_bj_mid"
+                android:indeterminateBehavior="repeat"
+                android:indeterminateDrawable="@drawable/theme_shop_v6_loading_mid_ani"
+                android:indeterminateOnly="true" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 操纵按钮 -->
+
+    <LinearLayout
+        android:id="@+id/launcher_navigation_pandahome_browser_operate_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/navigation_search_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <!-- 后退 -->
+
+        <LinearLayout
+            android:id="@+id/launcher_navigation_pandahome_browser_retreat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/launcher_navigation_pandahome_browser_retreat_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/webview_left_button" />
+        </LinearLayout>
+        <!-- 前进 -->
+
+        <LinearLayout
+            android:id="@+id/launcher_navigation_pandahome_browser_advance"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/launcher_navigation_pandahome_browser_advance_image_dx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/webview_right_pressed" />
+        </LinearLayout>
+        <!-- Home按钮 -->
+
+        <LinearLayout
+            android:id="@+id/launcher_navigation_pandahome_browser_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/launcher_navigation_pandahome_browser_home_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/webview_back_button" />
+        </LinearLayout>
+        <!-- 浏览器按钮 -->
+
+        <LinearLayout
+            android:id="@+id/launcher_navigation_pandahome_browser_open_browser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/launcher_navigation_pandahome_browser_open_browser_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/webview_browser_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/redpag_layout"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="75dip"
+        android:layout_marginRight="5dip"
+        android:background="#00ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/redPag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:maxHeight="75dp"
+            android:maxWidth="75dp"
+            android:minHeight="65dp"
+            android:minWidth="65dp"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/navi_cancel" />
+    </RelativeLayout>
+
+</RelativeLayout>

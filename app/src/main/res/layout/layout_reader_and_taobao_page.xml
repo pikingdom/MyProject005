@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.third_party.HeaderViewPager
+        android:id="@+id/scrollableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eef1f6"
+        android:orientation="vertical"
+        app:hvp_topOffset="40dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.nd.hilauncherdev.plugin.navigation.widget.dz.ReaderAndTaobaoHeaderView
+                android:id="@+id/header_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></com.nd.hilauncherdev.plugin.navigation.widget.dz.ReaderAndTaobaoHeaderView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#eef1f6">
+
+            <com.nd.hilauncherdev.plugin.navigation.widget.MyPhoneViewPagerInner
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </com.nd.hilauncherdev.plugin.navigation.widget.third_party.HeaderViewPager>
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.search.PinnedSearchLayout
+        android:id="@+id/layout_reader_taobao_pinned_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"></com.nd.hilauncherdev.plugin.navigation.widget.search.PinnedSearchLayout>
+
+</FrameLayout>

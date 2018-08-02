@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/navi_travel_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/navi_travel_ic"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:src="@drawable/jrtt_new_big_bg" />
+
+        <TextView
+            android:id="@+id/navi_travel_text"
+            android:layout_width="140dp"
+            android:layout_height="23dp"
+            android:layout_alignBottom="@+id/navi_travel_ic"
+            android:layout_centerHorizontal="false"
+            android:layout_marginLeft="10dp"
+            android:background="#85999999"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@drawable/card_item_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

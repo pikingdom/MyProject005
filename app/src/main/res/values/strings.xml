@@ -1,0 +1,157 @@
+<resources>
+
+    <item name="common_view_holder" type="id"></item>
+
+    <string name="app_name">91navigation</string>
+    <string name="navigation_sina">新浪</string>
+    <string name="navigation_netease">网易</string>
+    <string name="navigation_taobao">淘宝</string>
+    <string name="navigation_i_taobao">爱淘宝</string>
+    <string name="navigation_youku">优酷</string>
+    <string name="navigation_hiapk">安卓网</string>
+    <string name="navigation_xinhua">新华网</string>
+    <string name="navigation_iqiyi">爱奇艺</string>
+    <string name="navigation_amazon">亚马逊</string>
+    <string name="navigation_baidu">百度</string>
+    <string name="navigation_qunar">去哪儿</string>
+    <string name="navigation_vip">唯品会</string>
+    <string name="navigation_jdjr">京东金融</string>
+    <string name="navigation_maimaibao">买卖宝</string>
+    <string name="navigation_meituan">美团团购</string>
+    <string name="navigation_weipinhui">唯品会</string>
+    <string name="navigation_nuomi">百度糯米</string>
+    <string name="navigation_more">网址导航</string>
+    <string name="navigation_history">历史记录</string>
+    <string name="common_tip">提示</string>
+    <string name="common_button_cancel">取消</string>
+    <string name="frame_viewfacotry_data_load_text">正在很努力地很努力地加载中</string>
+    <string name="searchbox_title_voice">请开始说话</string>
+    <string name="searchbox_title_voice_result">语音搜索结果</string>
+    <string name="searchbox_title_detail_info">详细信息</string>
+    <string name="searchbox_subtitle_result_stat">%d个语音结果</string>
+    <string name="searchbox_subtitle_no_result">未找到相关结果，试试去应用中心或百度搜索吧</string>
+    <string name="searchbox_subtitle_result_info">搜索“%1$s”，为您找到相关结果%2$d个</string>
+    <string name="searchbox_network_not_available">无可用网络连接，请检查网络开关状态</string>
+    <string name="searchbox_speech_reco_not_available">您的手机（或固件版本）不支持语音识别功能</string>
+    <string name="searchbox_retry">重试</string>
+    <string name="hint_install_screenoff">一键关屏</string>
+    <string name="hint_install_screenoff_msg">解放电源键，一键点击锁定屏幕。\n是否安装？</string>
+    <string name="hint_install_zxing_scan">二维码扫描</string>
+    <string name="hint_install_zxing_scan_msg">扫应用、扫网址，扫码识别快捷精准。\n是否安装？</string>
+    <string name="upgrade_install_zxing_scan">二维码扫描</string>
+    <string name="upgrade_install_zxing_scan_msg">二维码扫描可升级   \n点击立即安装？</string>
+    <string name="upgrade_install_screenoff">一键关屏升级提示</string>
+    <string name="upgrade_install_screenoff_msg">一键关屏可升级  \n点击立即安装？</string>
+    <!-- 无网络默认热词 -->
+    <string name="hw_default_launcher">设置默认桌面</string>
+    <string name="hw_search">本机搜索</string>
+    <string name="hw_help">帮助手册</string>
+    <string name="hw_personal">个性化</string>
+    <string name="hw_personal_center">个人中心</string>
+    <string name="hw_setting">系统设置</string>
+    <string name="hw_share">无网络分享</string>
+    <string name="hw_app">应用管家</string>
+    <string name="hw_wallpaper">换壁纸</string>
+    <string name="hw_font">换字体</string>
+    <string name="hw_clean">一键清理</string>
+    <string name="hw_ring">换铃声</string>
+    <!-- 点心无网络默认热词 -->
+    <string name="hw_local_theme">本地主题</string>
+    <string name="hw_local_wallpaper">本地壁纸</string>
+    <string name="hw_local_ring">本地铃声</string>
+
+    <string name="settings_home_apps_shared_sina_weibo">新浪微博</string>
+    <string name="settings_home_apps_shared_mobile_qq">QQ好友</string>
+    <string name="settings_home_apps_shared_mobile_qq_name">QQ</string>
+    <string name="settings_home_apps_shared_qzone">QQ空间</string>
+    <string name="settings_home_apps_shared_wx_name">微信</string>
+    <string name="settings_home_apps_shared_wx_friend">微信好友</string>
+    <string name="settings_home_apps_shared_wx_friends">微信朋友圈</string>
+    <string name="settings_home_apps_shared_copy">复制链接</string>
+    <string name="settings_home_apps_shared_sms">短信</string>
+    <string name="settings_home_apps_shared_email">邮件</string>
+    <string name="settings_home_apps_shared_copy_tip">已经复制到剪贴板</string>
+    <string name="settings_home_apps_shared_not_install">您未安装%1$s，请先安装</string>
+    <string name="settings_home_apps_share_subject">分享\"91桌面\"</string>
+    <string name="settings_home_assistance_share_text_other">最新版本已更新,可以从market上下载安装咯:</string>
+    <string name="settings_home_apps_share_subject_dx">分享\"点心桌面\"</string>
+    <string name="common_install_now">立即安装</string>
+    <string name="common_dialog_confirm">确定</string>
+    <string name="dockbar_null_intent">Data error</string>
+    <string name="activity_not_found">"您的手机上未安装应用程序。"</string>
+    <string name="dialog_download">立即下载</string>
+    <string name="card_joke_next">换一个</string>
+    <string name="vph_more">更多精品</string>
+    <string name="game_h5_open">打开</string>
+    <string name="release_to_refresh">正在努力加载中.....</string>
+    <string name="network_not_available">网络连接不成功，请检查网络是否已断开</string>
+    <string name="game_next">换一批</string>
+    <string name="game_history">我的页游</string>
+    <string name="game_more">更多游戏</string>
+    <string name="recent_open_h5">最近玩过的网页游戏</string>
+    <string name="game_card_clear_title">清除最近玩过历史记录</string>
+    <string name="game_card_clear_title_msg">是否清除最近玩过历史记录？</string>
+    <string name="game_h5_recent_open_empty">您还没有玩过任何游戏</string>
+    <string name="recommend_dialog_dailynews_title_toutiao">下载今日头条</string>
+    <string name="recommend_dialog_dailynews_msg_toutiao">下载今日头条，5秒钟掌握你的新闻阅读兴趣点</string>
+    <string name="recommend_dialog_dailynews_title_kuaibao">下载天天快报</string>
+    <string name="recommend_dialog_dailynews_msg_kuaibao">下载天天快报，看你想看，说你想说!</string>
+    <string name="notify_recommend_tips">人正在使用这张卡片</string>
+    <string name="notify_recommend_tips_count">10000</string>
+    <string name="notify_add">添加</string>
+    <string name="notify_skipped">不要了</string>
+    <string name="notify_should_add_card_first">您需要先添加卡片才能置顶</string>
+
+
+    <string name="market_common_network_refresh">获取数据失败，请点击刷新</string>
+    <string name="market_common_list_end">没有更多内容了...</string>
+    <string name="market_txt_loading">正在加载</string>
+    <string name="market_overefresh_pulltorefresh">下拉刷新</string>
+    <string name="market_overefresh_releasetorefresh">释放更新</string>
+    <string name="market_overefresh_update">更新于</string>
+    <string name="market_overefresh_loading">加载中…</string>
+    <string name="frame_viewfacotry_net_break_btn">网络设置</string>
+    <string name="frame_viewfacotry_net_break_text">网络连接不成功,请检查网络是否已断开</string>
+    <string name="frame_viewfacotry_net_refresh_btn">&#160;&#160;刷&#160;&#160;&#160;&#160;新&#160;&#160;</string>
+    <string name="theme_shop_v2_theme_nodata_desc_feedback">小编正在努力上架资源，快来告诉我们你想要什么吧！</string>
+    <string name="frame_viewfacotry_show_netsetting_err">打开网络设置失败</string>
+    <string name="download_delete_title">提示</string>
+    <string name="download_not_wifi_alert">当前未开启wifi，是否继续下载？</string>
+    <string name="funny_card_unavailale_action_toast">页面加载失败，请稍后重试</string>
+    <string name="subscribe_card_more">更多订阅</string>
+    <string name="navigation_notice_sohu_news_page">新增资讯全屏卡片，内容更精彩，快来看看吧！</string>
+
+    <string name="no_url">无效播放地址</string>
+    <string name="video_unavailable_video">无效视频地址，播放失败</string>
+    <string name="apply_wallpaper_success">应用壁纸成功</string>
+    <string name="apply_wallpaper_fail">该壁纸无法应用！请选择其他壁纸</string>
+    <string name="notice_network_dlg_title">提示</string>
+    <string name="notice_network_dlg_content">当前无可用wifi,继续使用移动网络播放？</string>
+    <string name="notice_network_dlg_negative">取消</string>
+    <string name="notice_network_dlg_positive">继续播放</string>
+
+
+    <string name="notice_card_disable_msg">%s卡片下架了，添加点其他卡片吧</string>
+    <string name="title_activity_tao_bao_collection">TaoBaoCollectionActivity</string>
+
+    <string name="tb_collection_other_title">到底啦，宝宝去其他页面淘好货了~</string>
+    <string name="tb_collection_other_button">去下一个专场</string>
+
+
+    <string name="hello_word_morning">早上好^_^</string>
+    <string name="hello_word_afternoon">中午好^_^</string>
+    <string name="hello_word_evening">下午好^_^</string>
+    <string name="hello_word_night">晚上好^_^</string>
+    <string name="hello_word_midnight">夜深了，早点休息哟^_^</string>
+
+    <string name="search_guide_word_1">搜索是个好习惯~</string>
+    <string name="search_guide_word_2">输入app名，即可快速应用</string>
+    <string name="search_guide_word_3">本机应用，一键快搜</string>
+    <string name="search_guide_word_4">试试看输入自己朋友的名字吧~</string>
+    <string name="search_guide_word_5">我们支持搜索本机音乐啦</string>
+    <string name="search_guide_word_6">视频也可以被搜到了哦</string>
+
+    <string name="navigation_upgrade_tips">快速搜索屏有更新啦，点击此处升级!</string>
+
+
+</resources>

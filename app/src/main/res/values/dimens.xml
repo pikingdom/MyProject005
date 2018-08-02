@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="show_navigation_height">40dip</dimen>
+    <dimen name="navigation_height">50dp</dimen>
+    <dimen name="show_navigation_ex">10dip</dimen>
+    <dimen name="navigation_favorite_grid_item_height">57dip</dimen>
+    <dimen name="navigation_favorite_grid_item_toppadding">1dip</dimen>
+    <dimen name="navigation_favorite_grid_item_bottompadding">2dp</dimen>
+    <dimen name="searchbox_title_text_size">22sp</dimen>
+    <dimen name="status_bar_height">25dip</dimen>
+    <dimen name="button_bar_height">80dip</dimen>
+    <dimen name="navi_card_item_text_padding">8dip</dimen>
+    <dimen name="navi_card_view_app_ic">55dip</dimen>
+    <dimen name="navi_download_ic_dimen">30dip</dimen>
+    <dimen name="navi_download_ic_padding">5dip</dimen>
+    <dimen name="app_icon_size">48dip</dimen>
+    <dimen name="common_header_content_sep">15dip</dimen>
+    <dimen name="dialog_top_layout_height_40">40dip</dimen>
+    <dimen name="frame_viewpager_tab_textsize">15sp</dimen>
+    <!-- viewpagertab 默认字体大小 -->
+    <dimen name="frame_viewpager_tab_selected_textsize">17sp</dimen>
+    <!-- viewpagertab 每行高度 -->
+    <dimen name="viewpager_tab_more_item">25dip</dimen>
+
+    <dimen name="jc_start_button_w_h_normal">45dp</dimen>
+    <dimen name="jc_start_button_w_h_fullscreen">62dp</dimen>
+
+    <!-- 搜索框布局 start -->
+
+    <dimen name="search_layout_input_box_height_old">40dp</dimen>
+    <dimen name="search_layout_height">150dp</dimen>
+    <dimen name="search_layout_input_box_height">50dp</dimen>
+    <dimen name="search_layout_input_box_top_margin">14dp</dimen>
+    <dimen name="header_layout_top_margin">30dp</dimen>
+    <dimen name="search_layout_input_box_left_margin">11dp</dimen>
+    <dimen name="search_layout_input_box_right_margin">11dp</dimen>
+    <dimen name="search_layout_input_box_bottom_margin">11dp</dimen>
+    <dimen name="search_layout_horoscope_height">0dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <!-- 搜索框布局 end-->
+
+</resources>

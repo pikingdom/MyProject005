@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dip">
+	
+	<TextView android:id="@+id/frame_viewpager_tab_title_item_text"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/viewpager_tab_more_item"
+		android:gravity="center_vertical"
+		android:textColor="@android:color/white"
+		android:singleLine="true" />
+	
+</LinearLayout>

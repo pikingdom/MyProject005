@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:orientation="vertical"
+    android:id = "@+id/recommend_item_layout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:id = "@+id/subscribe_recommend_site_icon"
+            android:layout_centerVertical="true"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/subscribe_recommend_site_icon"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美食天下"
+                android:id="@+id/subscribe_recommend_site_name"
+                android:singleLine="true"
+                android:textColor="#1c1c1c"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="28dp"
+                android:text="订阅"
+                android:background="@drawable/subscribe_card_sub_btn_sel"
+                android:id="@+id/subscribe_recommend_site_subscribe"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"/>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立夏吃什么？几种食物"
+                android:id = "@+id/subscribe_recommend_site_desc"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/subscribe_recommend_site_subscribe"
+                android:layout_below="@id/subscribe_recommend_site_name"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"/>
+            
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e4e4e4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

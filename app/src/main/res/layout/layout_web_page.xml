@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0">
+
+            <com.nd.hilauncherdev.plugin.navigation.widget.webview.CustomWebView
+                android:id="@+id/web_dz_web_page"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/launcher_navigation_pandahome_browser_web_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/webview_progressbar_progress_horizontal1" />
+        </FrameLayout>
+
+        <com.nd.hilauncherdev.plugin.navigation.widget.WebViewToolbar
+            android:id="@+id/web_toolbar_dz_web_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.LoadingStateView
+        android:id="@+id/loading_dz_web_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:clickable="true" />
+
+</FrameLayout>

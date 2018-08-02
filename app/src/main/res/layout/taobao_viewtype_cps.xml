@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/layout_taobao_cps_one"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_taobao_cps_one_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp"
+            android:drawableLeft="@drawable/icon_yhs"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:lines="1"
+            android:textColor="#ff5480"
+            android:textSize="16sp"
+            tools:text="聚划算" />
+
+        <TextView
+            android:id="@+id/tv_taobao_cps_one_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#9c9c9c"
+            android:textSize="12sp"
+            tools:text="大牌抄底价" />
+
+        <ImageView
+            android:id="@+id/iv_taobao_cps_one_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vph"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#eecccccc" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <RelativeLayout
+            android:id="@+id/layout_taobao_cps_two"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/iv_taobao_cps_two_icon"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/vph"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_taobao_cps_two_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icon_ppt"
+                android:drawablePadding="1dp"
+                android:gravity="bottom"
+                android:textColor="#5770ed"
+                android:textSize="16sp"
+                tools:text="最后疯抢" />
+
+            <TextView
+                android:id="@+id/tv_taobao_cps_two_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_taobao_cps_two_title"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/iv_taobao_cps_two_icon"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#9c9c9c"
+                android:textSize="12sp"
+                tools:text="耐克满399减150" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#eecccccc" />
+
+        <RelativeLayout
+            android:id="@+id/layout_taobao_cps_three"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <ImageView
+                android:id="@+id/iv_taobao_cps_three_icon"
+                android:layout_width="74dp"
+                android:layout_height="74dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/vph"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+
+
+            <TextView
+                android:id="@+id/tv_taobao_cps_three_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/icon_zhfq"
+                android:gravity="center_vertical"
+                android:textColor="#fe9619"
+                android:textSize="16sp"
+                tools:text="品牌团" />
+
+            <TextView
+                android:id="@+id/tv_taobao_cps_three_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_taobao_cps_three_title"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/iv_taobao_cps_three_icon"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#9c9c9c"
+                android:textSize="12sp"
+                tools:text="耐克满399减150" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

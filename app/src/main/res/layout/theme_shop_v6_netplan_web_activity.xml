@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.HeaderView
+        android:id="@+id/headerView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <FrameLayout
+        android:id="@+id/web_progress_bar_fl"
+        android:layout_width="fill_parent"
+        android:layout_height="8dip"
+        android:layout_below="@id/headerView"
+        android:background="@drawable/theme_shop_v6_netplan_webload_process_title_bg">
+
+        <ProgressBar
+            android:id="@+id/web_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:max="100"
+            android:progressDrawable="@drawable/theme_shop_v6_netplan_webload_progress_bg" />
+    </FrameLayout>
+
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.webview.BaseWebView
+        android:id="@+id/theme_list_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbarThumbVertical="@drawable/list_view_scroll_bar_thumb"
+        android:layout_below="@+id/web_progress_bar_fl" />
+</RelativeLayout>

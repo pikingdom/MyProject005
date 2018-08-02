@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/search_view"
+    android:layout_marginTop="7dp"
+    android:fillViewport="true"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="vertical">
+
+        <!-- 推荐网址 -->
+
+        <LinearLayout
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/navigationFavoriteWebView"
+                layout="@layout/launcher_navigation_favorite_site" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"></LinearLayout>
+
+
+        <com.nd.hilauncherdev.plugin.navigation.widget.searchpage.TransparentUpgradeLayout
+            android:id="@+id/view_upgrade_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone"></com.nd.hilauncherdev.plugin.navigation.widget.searchpage.TransparentUpgradeLayout>
+
+
+        <com.nd.hilauncherdev.plugin.navigation.widget.searchpage.SohuNoticeLayout
+            android:id="@+id/view_sohu_notice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/navi_card_content_bg"
+            android:visibility="gone"></com.nd.hilauncherdev.plugin.navigation.widget.searchpage.SohuNoticeLayout>
+
+        <com.nd.hilauncherdev.plugin.navigation.widget.searchpage.CardNoticeLayout
+            android:id="@+id/view_card_notice_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"></com.nd.hilauncherdev.plugin.navigation.widget.searchpage.CardNoticeLayout>
+
+        <com.nd.hilauncherdev.plugin.navigation.widget.searchpage.RefreshLayout
+            android:id="@+id/view_refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"></com.nd.hilauncherdev.plugin.navigation.widget.searchpage.RefreshLayout>
+
+
+        <LinearLayout
+            android:id="@+id/navigation_card_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:orientation="vertical"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navigation_ad_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/navigation_ad_card" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/news_card_title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/navi_card_title_bg"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal|bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:gravity="left"
+                android:maxLines="1"
+                android:text="热门资讯"
+                android:textColor="#7F1798c1"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/navigationBlankView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+</LinearLayout>

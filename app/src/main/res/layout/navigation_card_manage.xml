@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_header_content_sep"
+    android:orientation="vertical" >
+
+    <include layout="@layout/preference_activity_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_header_content_sep"
+        android:background="@color/common_header_content_sep"></LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:background="@color/common_content_backgroud">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/navi_card_up_list"
+                android:layout_width="fill_parent"
+                android:cacheColorHint="#00000000"
+                android:layout_height="wrap_content"
+                android:divider="#00000000" />
+
+            <com.nd.hilauncherdev.plugin.navigation.widget.DragSortListView
+                android:id="@+id/navi_card_down_list"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000"
+                android:dividerHeight="5dp"
+                dslv:drag_enabled="true"
+                dslv:drag_handle_id="@id/navi_list_card_manager_move_ic" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

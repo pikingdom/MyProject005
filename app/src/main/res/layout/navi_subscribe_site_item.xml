@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:id = "@+id/subscribe_small_icon"
+            android:layout_centerVertical="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@+id/subscribe_site_update_time"
+            android:layout_toRightOf="@id/subscribe_small_icon"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美食天下"
+                android:id="@+id/subscribe_site_name"
+                android:singleLine="true"
+                android:textColor="#1C1C1C"
+                android:textSize="15sp"/>
+
+
+            
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立夏吃什么？几种食物"
+                android:id = "@+id/subscribe_site_desc"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                android:singleLine="true"
+                android:layout_marginTop="12dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1小时前"
+            android:layout_marginRight="16dp"
+            android:id="@+id/subscribe_site_update_time"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e4e4e4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="70dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="204dp"
+    android:orientation="vertical" >
+
+    <!-- banner-->
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="204dp"
+            android:id="@+id/zakernews"
+            android:layout_gravity="center_horizontal">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bannerImage"
+                android:scaleType="matrix"
+                android:layout_gravity="left|center_vertical"/>
+        <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:text="这是文章标题"
+                android:id="@+id/bannerTitle"
+                android:layout_marginBottom="10dp"
+                android:textColor="#ffffffff"
+                android:background="#7F000000"
+                android:paddingLeft="17dp"
+                android:maxLines="1"
+                android:textSize="14sp"
+                android:gravity="left|center_vertical"
+                android:paddingRight="17dp"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+    </FrameLayout>
+</LinearLayout>

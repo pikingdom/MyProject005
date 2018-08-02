@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.nd.android.pandahome2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_content_backgroud"
+    android:orientation="vertical" >
+
+    <include layout="@layout/preference_activity_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_header_content_sep"
+        android:background="@color/common_header_content_sep"></LinearLayout>
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/navi_card_detail_ic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:adjustViewBounds="true"
+                android:gravity="center_horizontal"
+                android:src="@drawable/jrtt_new_big_bg" />
+
+            <TextView
+                android:id="@+id/navi_card_detail_desc"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left|center_vertical"
+                android:text="随时掌握星座每日运势"
+                android:textColor="#999999"
+                android:textSize="15sp" />
+
+            <ListView
+                android:id="@+id/navi_card_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="#00000000"
+                android:divider="#00000000" />
+
+            <TextView
+                android:id="@+id/navi_card_all_added"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:background="#c5c2bc"
+                android:gravity="center"
+                android:text="敬请期待新卡片"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/navi_card_added_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            android:background="@drawable/card_add_notice_sel"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="卡片已添加到快速搜索屏"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/navi_view_added_card"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:text="去看看"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

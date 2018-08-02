@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@drawable/theme_shop_v6_bottomtool_app_list_bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/preference_activity_title" />
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.MyPhoneViewPagerTab
+        android:id="@+id/container_pagertab"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"/>
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.MyPhoneViewPager
+        android:id="@+id/container_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f4f4f4"
+        android:layout_below="@id/container_pagertab"/>
+
+</LinearLayout>

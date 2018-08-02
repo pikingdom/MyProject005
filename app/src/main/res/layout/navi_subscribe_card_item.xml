@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp">
+
+        <ImageView
+            android:layout_width="115dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/vph"
+            android:layout_marginTop="15dp"
+            android:id = "@+id/navi_subscribe_card_article_layout_icon"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:layout_marginRight="16dp"
+            android:layout_toLeftOf="@id/navi_subscribe_card_article_layout_icon">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="奇葩搭配自由奇妙滋味，葡萄酒也能配旧料"
+                android:id="@+id/navi_subscribe_card_article_layout_title"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:lineSpacingExtra="10dp"
+                android:textColor="@drawable/card_item_text"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吃饭研究所"
+                android:id = "@+id/navi_subscribe_card_article_layout_from"
+                android:textColor="@color/funny_card_item_text"
+                android:textSize="12sp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+</LinearLayout>

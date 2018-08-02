@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <include
+        android:id = "@+id/layout_video_ad"
+        layout="@layout/item_video_list_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+    <include
+        android:id = "@+id/layout_video_video"
+        layout="@layout/item_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></include>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+﻿
+
+{
+  "total": 3,
+  "success": true,
+  "data": [
+    {
+      "id": 13045,
+      "wxalias": "吃货研究所",
+      "logourl": "http://filelx.gao7.com/g1/M00/92/B2/wKgKxlXcPUuAZ1XlAAATxkLCsqE560.jpg",
+      "subcount": 1342,
+      "description": "  我们研究吃   ",
+      "categoryid": 135,
+      "categoryname": "家常菜",
+      "lastarticleid": 3694441,
+      "lastarticletitle": "如何在陌生城市寻找美食？知道这些，英国都能变成美食天堂！",
+      "lastarticledate": "2016-08-03 18:34:33",
+      "flag": "",
+      "isauth": 1
+    },
+    {
+      "id": 9400,
+      "wxalias": "瑞丽网",
+      "logourl": "http://filelx.gao7.com/g1/M00/FB/C9/CilEmVcZuySAVzn9AABcWHbMEBA699.jpg",
+      "subcount": 2501,
+      "description": "  瑞丽网——网聚世界潮流,设计你的时尚!http://www.rayli.com.cn/秉承瑞丽品牌气质与内涵,聚焦都市时尚生活主张,用更新鲜的角度诠释实用的时尚   ",
+      "categoryid": 381,
+      "categoryname": "明星时尚",
+      "lastarticleid": 3698446,
+      "lastarticletitle": "又虐狗 |《遇见王沥川》开启6种新式暖男招数！摸头杀捧脸背后抱让我血槽已空",
+      "lastarticledate": "2016-08-04 12:09:59",
+      "flag": "",
+      "isauth": 1
+    },
+   {
+      "id": 6560,
+      "wxalias": "豆瓣电影",
+      "logourl": "http://wx.ijinshan.com/i/569-0.jpg?1356802289",
+      "subcount": 6709,
+      "description": "  发现好电影,分享看电影的乐趣   ",
+      "categoryid": 82,
+      "categoryname": "影视",
+      "lastarticleid": 3688687,
+      "lastarticletitle": "到底是妻子恐怖，还是婚姻恐怖？",
+      "lastarticledate": "2016-08-02 18:49:20",
+      "flag": "",
+      "isauth": 1
+    }
+  ]
+}

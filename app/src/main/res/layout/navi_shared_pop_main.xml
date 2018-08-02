@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="290.0dip"
+    android:layout_alignParentBottom="true"
+    android:background="#fff7f7f7" >
+
+    <Button
+        android:id="@+id/shared_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/common_btn_cancel_selector"
+        android:text="@string/common_button_cancel"
+        android:textColor="@color/market_android_black"
+        android:textSize="16.0sp" />
+
+    <FrameLayout
+        android:id="@+id/shared_lightbar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="8.0dip"
+        android:layout_above="@id/shared_cancel" >
+
+        <com.nd.hilauncherdev.plugin.navigation.commonsliding.CommonLightbar
+            android:id="@+id/shared_lightbar"
+            android:layout_width="fill_parent"
+            android:layout_height="8.0dip"
+            android:gravity="center_horizontal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/shared_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/shared_lightbar_layout"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:paddingTop="20.0dip" />
+
+</RelativeLayout>

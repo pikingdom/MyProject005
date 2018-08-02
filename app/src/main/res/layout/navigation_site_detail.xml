@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.nd.android.pandahome2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/common_content_backgroud"
+    android:orientation="vertical" >
+
+    <include layout="@layout/preference_activity_title" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_header_content_sep"
+        android:background="@color/common_header_content_sep"></LinearLayout>
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.NavigationDetailSiteView
+        android:id="@+id/navi_site_detail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" >
+
+        <ScrollView
+            android:id="@+id/navigationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fillViewport="true"
+            android:gravity="center_horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <!-- 推荐网址和网址导航 -->
+
+                <LinearLayout
+                    android:id="@+id/navigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id = "@+id/layout_favorite_site_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/navi_list_bg"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="27dp"
+                        android:paddingRight="27dp"
+                        android:paddingTop="5dp" >
+
+                        <include
+                            android:id="@+id/navigationFavoriteWebView"
+                            layout="@layout/launcher_navigation_favorite_site" />
+                    </LinearLayout>
+
+                    <!-- 网址导航头部 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/navi_list_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:id="@+id/show_navigation"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/tv_nav_more_title"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:gravity="center_vertical"
+                                android:text="分类网址"
+                                android:textColor="#333333"
+                                android:textSize="16sp" />
+
+                            <ImageView
+                                android:id="@+id/show_navigation_index"
+                                android:layout_width="50dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:padding="1dp"
+                                android:scaleType="centerInside"
+                                android:src="@drawable/navi_arrow_up" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#e0e0e0" />
+                        <!-- 网址导航内容 -->
+
+                        <LinearLayout
+                            android:id="@+id/navigationSiteViewLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp" >
+
+                            <include
+                                android:id="@+id/navigationWebView"
+                                layout="@layout/launcher_navigation_site" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/navigationBlankView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- 语音识别按钮 -->
+
+        <ImageView
+            android:id="@+id/btnVoice"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@id/search_view"
+            android:layout_below="@id/search_view"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/launcher_navigation_btn_bg_selector"
+            android:scaleType="centerInside"
+            android:src="@drawable/launcher_navigation_btn_voice"
+            android:visibility="gone" />
+    </com.nd.hilauncherdev.plugin.navigation.widget.NavigationDetailSiteView>
+
+</LinearLayout>

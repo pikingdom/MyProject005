@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.book.ScaleImageView
+        android:id="@+id/iv_tb_collection_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:ratio="1"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_tb_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:textColor="#323232"
+        android:textSize="12sp"
+        android:drawableLeft="@drawable/tb_collection_head_time"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        tools:text="距离结束: 3天17:36:02" />
+
+</LinearLayout>

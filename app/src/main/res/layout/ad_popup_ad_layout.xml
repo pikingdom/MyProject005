@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_popup_ad_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <com.nd.hilauncherdev.plugin.navigation.widget.common.RoundImageView
+            android:id="@+id/iv_popup_ad_thumb"
+            android:layout_width="250dp"
+            android:layout_height="448dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_popup_ad_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/ic_popup_ad_close" />
+
+    </LinearLayout>
+
+</RelativeLayout>

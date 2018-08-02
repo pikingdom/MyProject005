@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginLeft="16dp">
+
+        <ImageView
+            android:layout_width="102dp"
+            android:layout_height="76dp"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:id = "@+id/funny_small_icon"
+            android:layout_centerVertical="true"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/funny_small_icon"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吃货少女的日常"
+                android:id="@+id/funny_small_title"
+                android:singleLine="true"
+                android:textColor="#676b6e"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吃货的一天都是酱紫度过的"
+                android:id = "@+id/funny_small_desc"
+                android:textColor="#a3afb8"
+                android:textSize="13sp"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#e4e4e4"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="118dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

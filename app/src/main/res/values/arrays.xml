@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="open_page_array">
+        <item>购物</item>
+        <item>资讯</item>
+        <item>零屏</item>
+        <item>唯品会</item>
+        <item>搜狐</item>
+    </string-array>
+    <string-array name="open_page_array_dx">
+        <item>零屏</item>
+        <item>购物</item>
+        <item>资讯</item>
+        <item>其他</item>
+    </string-array>
+</resources>

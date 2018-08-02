@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="navi_list_card_manager_move_ic" type="id"/>
+    <item name="video_tiny_window" type="id"/>
+    <item name="video_fullscreen_window" type="id"/>
+    <item name="reader_and_taobao_viewpager_tab" type="id"/>
+    <item name="reader_and_taobao_viewpager_pull_refresh_header" type="id"/>
+
+</resources>

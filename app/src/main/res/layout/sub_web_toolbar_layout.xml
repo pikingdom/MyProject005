@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/launcher_navigation_pandahome_browser_operate_bar"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:layout_alignParentBottom="true"
+    android:background="@color/navigation_search_bg"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:visibility="visible">
+
+    <!-- 后退 -->
+
+    <LinearLayout
+        android:id="@+id/launcher_navigation_pandahome_browser_retreat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/launcher_navigation_pandahome_browser_retreat_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/webview_left_button" />
+    </LinearLayout>
+    <!-- 前进 -->
+
+    <LinearLayout
+        android:id="@+id/launcher_navigation_pandahome_browser_advance"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/launcher_navigation_pandahome_browser_advance_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/webview_right_button_unclick" />
+    </LinearLayout>
+    <!-- Home按钮 -->
+
+    <LinearLayout
+        android:id="@+id/launcher_navigation_pandahome_browser_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/launcher_navigation_pandahome_browser_home_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/webview_back_button" />
+    </LinearLayout>
+    <!-- 浏览器按钮 -->
+
+    <LinearLayout
+        android:id="@+id/launcher_navigation_pandahome_browser_open_browser"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/launcher_navigation_pandahome_browser_open_browser_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/webview_browser_button" />
+    </LinearLayout>
+</LinearLayout>

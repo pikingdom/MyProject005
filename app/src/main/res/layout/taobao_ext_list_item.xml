@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+
+    <RelativeLayout
+        android:id="@+id/tb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/iv_tb_preview"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_product_count"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_alignBottom="@+id/iv_tb_preview"
+            android:layout_alignLeft="@+id/iv_tb_preview"
+            android:layout_alignRight="@+id/iv_tb_preview"
+            android:background="#b2fb547e"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            tools:text="共34款" />
+
+        <TextView
+            android:id="@+id/tv_tb_today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_tb_preview"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/iv_tb_preview"
+            android:background="@drawable/bg_tb_today"
+            android:paddingBottom="2dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="3dp"
+            android:text="今日"
+            android:textColor="@color/tao_bao_primary"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/tv_tb_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_tb_preview"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/iv_tb_preview"
+            android:ellipsize="end"
+            android:lineSpacingExtra="4dp"
+            android:lines="2"
+            android:textColor="#181818"
+            android:background="@color/transparent"
+            android:textSize="16sp"
+            tools:text="\u3000\u3000\u0020【天猫超市】维达细韧系列软包抽纸3层150抽24包整箱 中幅纸巾" />
+
+        <TextView
+            android:id="@+id/tv_tb_promo_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tb_title"
+            android:layout_marginTop="9dp"
+            android:layout_toRightOf="@+id/iv_tb_preview"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:textColor="@color/tao_bao_primary"
+            android:textSize="18sp"
+            tools:text="￥22.99" />
+
+        <TextView
+            android:id="@+id/tv_tb_huodong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_tb_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tv_tb_promo_price"
+            android:background="@drawable/bg_tb_huodong"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lines="1"
+            android:paddingBottom="2dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="2dp"
+            android:textColor="@color/tao_bao_primary"
+            android:textSize="13sp"
+            tools:text="满18元包邮" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_tb_preview"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_tb_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="#727272"
+                android:textSize="13sp"
+                tools:text="￥5906.0" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#00000000"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_tb_activity_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="2dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:textColor="@color/tb_activity_desc_color_gray"
+                android:textSize="13sp"
+                tools:background="@drawable/tb_activity_zui_re_hao_huo"
+                tools:text="2520人已购" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

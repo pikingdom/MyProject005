@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/market_common_wrap"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+    <include layout="@layout/preference_activity_title"
+             android:id = "@+id/header_view_layout"/>
+    
+    <com.nd.hilauncherdev.plugin.navigation.widget.subscribe.SubscribeCateLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header_view_layout"/>
+</RelativeLayout>

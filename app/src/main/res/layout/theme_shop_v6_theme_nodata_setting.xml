@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/nodate_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/nodate_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:textColor="#8d8d8d"
+        android:textSize="14.7dip" />
+
+    <Button
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/btnFeedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8d8d8d"
+        android:textSize="14.7dip"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:text="告诉你吧" />
+</LinearLayout>

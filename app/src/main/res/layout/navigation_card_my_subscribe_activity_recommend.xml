@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/market_common_wrap"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffffff"
+                android:orientation="vertical">
+
+    <include
+        android:id="@+id/header_view_layout"
+        layout="@layout/preference_activity_title"/>
+
+
+
+    <TextView
+        android:id = "@+id/recommend_title"
+        android:layout_below="@id/header_view_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:singleLine="true"
+        android:layout_marginTop="17dp"
+        android:textColor="#1c1c1c"
+        android:text="推荐订阅"
+        android:textSize="16sp"/>
+
+
+    <RelativeLayout
+        android:id="@+id/add_layout"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:id = "@+id/subscribe_btn_layout"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/navi_card_add_btn"
+            android:layout_centerHorizontal="true">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:layout_width="20dp"
+                    android:id = "@+id/add_icon"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/subscribe_add_btn_pic"/>
+
+                <TextView
+                    android:id ="@+id/recommend_subscribe_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textColor="#FFFFFF"
+                    android:text="点此添加更多订阅号"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    
+    <com.nd.hilauncherdev.plugin.navigation.widget.PullToRefreshListView
+        android:id="@+id/recommend_listview"
+        android:layout_below="@id/recommend_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffffff"
+        android:divider="@null"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="#00000000"
+        android:dividerHeight="0dp"
+        android:layout_above="@id/add_layout"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/list_selector_bg"
+        android:scrollbarThumbVertical="@drawable/list_view_scroll_bar_thumb"/>
+
+
+
+
+</RelativeLayout>

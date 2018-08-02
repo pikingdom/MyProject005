@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="#eeeeee"
+              android:orientation="vertical">
+
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.PullToRefreshListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"
+            android:dividerHeight="8dp"
+            android:divider="#dedede"
+            android:cacheColorHint="#00000000"
+            android:layout_gravity="center_horizontal"/>
+</LinearLayout>

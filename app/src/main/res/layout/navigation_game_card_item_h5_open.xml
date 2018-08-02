@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    >
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/loading_bgcf"
+        android:id = "@+id/game_icon"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/game_name"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:maxLength="5"
+        android:textColor="@color/game_card_white"
+        android:layout_below="@id/game_icon"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/game_download"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:textColor="@drawable/card_game_h5_button_sel"
+        android:layout_below="@id/game_name"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:maxLength="7"
+        android:text="打开"
+        android:textSize="13sp"
+        android:background="@drawable/game_card_open"
+        android:gravity="center"
+        />
+
+</LinearLayout>

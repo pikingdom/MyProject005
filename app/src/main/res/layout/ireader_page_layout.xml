@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.bookpage.ListViewWithBook
+        android:id="@+id/ireader_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#ffffffff"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/inset_padding_list_divider"
+        android:dividerHeight="0px"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/transparent_background"
+        android:scrollbarThumbVertical="@drawable/list_view_scroll_bar_thumb" />
+
+</RelativeLayout>

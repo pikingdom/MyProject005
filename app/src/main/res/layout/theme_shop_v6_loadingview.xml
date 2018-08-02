@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/nodata"
+        layout="@layout/theme_shop_v6_theme_nodata_setting"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <include
+        android:id="@+id/neterror_layout"
+        layout="@layout/theme_shop_v6_theme_neterror_setting"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <include
+        android:id="@+id/loading_layout"
+        layout="@layout/theme_shop_v6_loading_style_mid"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</RelativeLayout>

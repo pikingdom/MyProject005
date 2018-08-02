@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wait_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <ProgressBar
+        android:id="@+id/progress_small_title"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/theme_shop_v6_loading_bj_mid"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/theme_shop_v6_loading_mid_ani"
+        android:indeterminateOnly="true" />
+
+</LinearLayout>

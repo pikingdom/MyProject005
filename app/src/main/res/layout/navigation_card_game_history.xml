@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dslv="http://schemas.android.com/apk/res/com.nd.android.pandahome2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0e0e0"
+    android:orientation="vertical">
+
+    <include layout="@layout/preference_activity_title" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="#f0f0f0"
+        ></LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/common_blue_vertical_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/common_blue_vertical_line"/>
+        <TextView
+            android:layout_toRightOf="@+id/common_blue_vertical_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/recent_open_h5"
+            android:layout_centerVertical="true"
+            android:textColor="#1c1c1c"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:id="@+id/game_h5_history_gridview_layout">
+
+        <GridView
+            android:id="@+id/game_h5_history_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:cacheColorHint="#00000000"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:horizontalSpacing="6dp"
+            android:listSelector="#00000000"
+            android:numColumns="4"
+            android:stretchMode="columnWidth"
+            android:transcriptMode="disabled"
+            android:verticalSpacing="6dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:background="#ffffff">
+
+        <ImageView
+            android:id="@+id/iv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:src="@drawable/game_h5_recent_open_empty"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/game_h5_recent_open_empty"
+            android:textColor="#adadad"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

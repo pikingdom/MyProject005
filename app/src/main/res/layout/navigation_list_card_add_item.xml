@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navi_add_card_all"
+    android:layout_width="fill_parent"
+    android:layout_height="70dp"
+    android:background="@color/common_content_backgroud"
+    android:gravity="center_vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/navi_add_card_ic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/main_dock_desktop_menu" />
+
+        <TextView
+            android:id="@+id/navi_list_card_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/navi_add_card_ic"
+            android:text="name"
+            android:textColor="#4e4e4e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/navi_list_card_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@+id/navi_list_card_info"
+            android:layout_toRightOf="@+id/navi_add_card_ic"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="desc"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/navi_list_card_info"
+            android:layout_width="60dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/navi_card_add_btn"
+            android:gravity="center"
+            android:text="未添加"
+            android:textColor="#f8c066"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#eeeeee"
+        android:layout_marginLeft="68dp">
+    </View>
+
+</RelativeLayout>

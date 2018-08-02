@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_card_recommend_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_layout_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_layout_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_layout_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_layout_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_card_h5_layout"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_h5_layout_item1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_h5_layout_item2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_h5_layout_item3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+        <include layout="@layout/navigation_game_card_item"
+            android:id = "@+id/game_card_h5_layout_item4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/navi_card_sep"
+        android:layout_marginTop="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_card_news_layout"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/game_card_news_item1"
+            android:text="前往世界的尽头同名手游"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/game_card_white"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/game_card_news_item2"
+            android:text="梦幻西游手游2015必玩大作"
+            android:textColor="@color/game_card_white"
+            android:textSize="13sp"/>
+    </LinearLayout>
+
+</LinearLayout>

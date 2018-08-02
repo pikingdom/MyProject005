@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+
+    <include layout="@layout/navi_subscribe_card_item"
+             android:id = "@+id/navi_card_subscribe_article_1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/notify_skip_color_title2"/>
+    
+    <include layout="@layout/navi_subscribe_card_item"
+             android:id = "@+id/navi_card_subscribe_article_2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@color/notify_skip_color_title2"/>
+    
+    <include layout="@layout/navi_subscribe_card_item"
+             android:id = "@+id/navi_card_subscribe_article_3"/>
+
+</LinearLayout>

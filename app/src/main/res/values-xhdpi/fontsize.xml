@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontsize_12sp">12sp</dimen>
+    <dimen name="fontsize_14sp">14sp</dimen>
+    <dimen name="fontsize_16sp">16sp</dimen>
+</resources>

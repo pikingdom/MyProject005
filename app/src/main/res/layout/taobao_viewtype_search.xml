@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/layout_taobao_search"
+    android:layout_height="42dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/navi_video_search_edittext_bg"
+    android:paddingLeft="16dp"
+    android:paddingRight="12dp"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_taobao_search"
+        />
+
+    <TextView
+        android:layout_marginLeft="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:text="淘一下"
+        android:textColor="#999999"
+        android:textSize="14sp" />
+</LinearLayout>

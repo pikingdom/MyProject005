@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navi_site_word_item_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_weight="1"
+    android:paddingBottom="@dimen/navi_card_item_text_padding"
+    android:paddingTop="@dimen/navi_card_item_text_padding"
+    android:background="@drawable/card_item_bg_sel"
+    android:orientation="horizontal">
+
+
+    <TextView
+            android:id="@+id/navi_site_word"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="网址1"
+            android:textColor="@drawable/card_item_text"
+            android:textSize="14sp" />
+
+    <ImageView
+            android:id="@+id/navi_site_ic"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:src="@drawable/navi_card_item_hot" />
+
+</LinearLayout>

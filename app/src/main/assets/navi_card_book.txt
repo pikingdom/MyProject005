@@ -1,0 +1,36 @@
+{"bookNumber":10,"bookList":[{
+  "detailUrl": "http://ks.baidu.com/app91/getbookinfo?bkid=369410031&uid=359911052746380",
+  "bookId": "369410031",
+  "name": "清宫熹妃传",
+  "author": "解语",
+  "type": 1,
+  "num": "3474",
+  "latestChapter": "第一千一百九十章　升堂",
+  "description": "她为保家人周全狠心抛弃青梅竹马的恋人入宫",
+  "icon": "http://img.m.shucheng.baidu.com/operateimg/novel/f4/f49a202e552b4c972410df21431f4118.jpg",
+  "url": "http://ks.baidu.com/book/read?fr=91zmxskp&bkid=369410031&v=4&uid=359911052746380"
+},
+{
+  "detailUrl": "http://ks.baidu.com/app91/getbookinfo?bkid=378327121&uid=359911052746380",
+  "bookId": "378327121",
+  "name": "惹爱成瘾",
+  "author": "半世琉璃",
+  "type": 1,
+  "num": "663",
+  "latestChapter": "第六百五十八章 做点什么",
+  "description": "一次酒醉，她误惹江城第一豪门的太子爷，逮",
+  "icon": "http://img.m.shucheng.baidu.com/operateimg/novel/06/06d9495363969b256bbb077d5a91599b.jpg",
+  "url": "http://ks.baidu.com/book/read?fr=91zmxskp&bkid=378327121&v=4&uid=359911052746380"
+},
+{
+  "detailUrl": "http://ks.baidu.com/app91/getbookinfo?bkid=367201121&uid=359911052746380",
+  "bookId": "367201121",
+  "name": "仙武同修",
+  "author": "月如火",
+  "type": 1,
+  "num": "1972",
+  "latestChapter": "2078 生女儿好",
+  "description": "吞食仙丹后，穿越天武大陆大秦国，成为墨河",
+  "icon": "http://img.shucheng.platform.zongheng.com/novel/group1/M00/92/0D/CgoAmVQEQPqAe4A5AAAOzQAWZrk315.jpg",
+  "url": "http://ks.baidu.com/book/read?fr=91zmxskp&bkid=367201121&v=4&uid=359911052746380"
+}]}

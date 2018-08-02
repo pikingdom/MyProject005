@@ -1,0 +1,59 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 14
+
+    aaptOptions {
+        cruncherEnabled false
+        useNewCruncher false
+    }
+    defaultConfig {
+        applicationId "com.example.administrator.myzero"
+        minSdkVersion 8
+        targetSdkVersion 8
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled false
+        buildConfigField "boolean", "NAVIGATION_FOR_CUSTOM_LAUNCHER", "true"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [RELEASE_SVN: 1, BUILD_DATE:1]
+        }
+        debug{
+            manifestPlaceholders = [RELEASE_SVN: 1, BUILD_DATE:1]
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+}
+
+dependencies {
+//    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    provided files('libs/ReflectUtil.jar')
+
+    compile files('libs/dynamicsdk.jar')
+    compile files('libs/viewpager.jar')
+    compile files('libs/PluginAdManager.jar')
+
+    releaseProvided files('libs/felink_adsdk_lite_v1.6.jar')
+    releaseProvided files('libs/felink_sdk_common_v1.2.jar')
+    releaseProvided files('libs/ImageLoader.jar')
+    releaseProvided files('libs/mini_cid.jar')
+    releaseProvided files('libs/newsliteapi.jar')
+    releaseProvided files('libs/STeamer-release.jar')
+
+    debugCompile files('libs/felink_adsdk_lite_v1.6.jar')
+    debugCompile files('libs/felink_sdk_common_v1.2.jar')
+    debugCompile files('libs/ImageLoader.jar')
+    debugCompile files('libs/mini_cid.jar')
+//    debugCompile project(':SohuNewsLib')
+    debugProvided files('libs/newsliteapi.jar')
+    debugProvided files('libs/STeamer-release.jar')
+}

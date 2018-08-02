@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/navigation_notice_news_page_layout"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/navi_plugin_notify" />
+
+    <TextView
+        android:id = "@+id/tv_notice_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/navigation_notice_sohu_news_page"
+        android:textColor="@drawable/card_item_text" />
+
+</LinearLayout>

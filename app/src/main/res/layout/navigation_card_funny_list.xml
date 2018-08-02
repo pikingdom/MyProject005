@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#e0e0e0"
+    android:orientation="vertical">
+
+    <include layout="@layout/preference_activity_title" />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="#f0f0f0"
+        ></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#00000000"
+        android:orientation="vertical">
+
+
+        <com.nd.hilauncherdev.plugin.navigation.widget.PullToRefreshListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listview"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:cacheColorHint="#00000000"
+            android:background="#ffffffff"
+            android:scrollbarThumbVertical="@drawable/list_view_scroll_bar_thumb"
+            android:listSelector="@drawable/list_selector_bg"
+            android:layout_gravity="center_horizontal"/>
+    </RelativeLayout>
+</LinearLayout>

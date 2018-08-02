@@ -1,0 +1,130 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#70000000"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/launcher_navigation_pandahome_browser_operate_bar"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_alignParentBottom="true"
+            android:background="@color/navigation_search_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="visible">
+
+            <!-- 后退 -->
+
+            <LinearLayout
+                android:id="@+id/launcher_navigation_pandahome_browser_retreat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/launcher_navigation_pandahome_browser_retreat_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/webview_left_button" />
+            </LinearLayout>
+            <!-- 前进 -->
+
+            <LinearLayout
+                android:id="@+id/launcher_navigation_pandahome_browser_advance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/launcher_navigation_pandahome_browser_advance_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/webview_right_button_unclick" />
+            </LinearLayout>
+            <!-- Home按钮 -->
+
+            <LinearLayout
+                android:id="@+id/launcher_navigation_pandahome_browser_home"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/launcher_navigation_pandahome_browser_home_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/webview_back_button" />
+            </LinearLayout>
+            <!-- 浏览器按钮 -->
+
+            <LinearLayout
+                android:id="@+id/launcher_navigation_pandahome_browser_open_browser"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/launcher_navigation_pandahome_browser_open_browser_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/webview_browser_button" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/launcher_navigation_pandahome_browser_operate_bar">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/webview_layout">
+            </FrameLayout>
+
+            <ProgressBar
+                android:id="@+id/launcher_navigation_pandahome_browser_web_progressbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/webview_progressbar_progress_horizontal1" />
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/wait_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress_small_title"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/theme_shop_v6_loading_bj_mid"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/theme_shop_v6_loading_mid_ani"
+            android:indeterminateOnly="true" />
+    </LinearLayout>
+
+
+
+</FrameLayout>

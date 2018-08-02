@@ -1,0 +1,29 @@
+{
+    "AdList": [
+        {
+            "imgFullPath": "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/e5c39e263d254ad0b68c4511be416fee.jpg",
+            "url": "http://click.union.vip.com/redirect.php?url=eyJjaGFuIjoibTkxa2FwaWFuMSIsInNjaGVtZWNvZGUiOiIyZjQxemdoYSIsImRlc3R1cmwiOiJodHRwOlwvXC9tLnZpcC5jb21cLz9mPW05MWthcGlhbjEiLCJ1Y29kZSI6IjNvc2Jrc3lpIn0=",
+            "Zone_id": "362"
+        },
+        {
+            "imgFullPath": "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/12098834a10743b4b916cef66161bc84.jpg",
+            "url": "http://click.union.vip.com/redirect.php?url=eyJjaGFuIjoibTkxa2FwaWFuMiIsInNjaGVtZWNvZGUiOiIyZjQxemdoYSIsImRlc3R1cmwiOiJodHRwOlwvXC9tLnZpcC5jb21cL2Nsb3RoZXMuaHRtbCIsInVjb2RlIjoiM29zYmtzeWkifQ==",
+            "Zone_id": "422"
+        },
+        {
+            "imgFullPath": "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/d9de62e0ed4b40cf8b32a64b65be8cc0.jpg",
+            "url": "http://click.union.vip.com/redirect.php?url=eyJjaGFuIjoibTkxa2FwaWFuMyIsInNjaGVtZWNvZGUiOiIyZjQxemdoYSIsImRlc3R1cmwiOiJodHRwOlwvXC9tLnZpcC5jb21cL2NoaWxkLmh0bWwiLCJ1Y29kZSI6IjNvc2Jrc3lpIn0=",
+            "Zone_id": "423"
+        },
+		{
+            "imgFullPath": "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/c439f2405a5145a0aa4638119b618860.jpg",
+            "url": "http://click.union.vip.com/redirect.php?url=eyJjaGFuIjoibTkxa2FwaWFuNCIsInNjaGVtZWNvZGUiOiIyZjQxemdoYSIsImRlc3R1cmwiOiJodHRwOlwvXC9tLnZpcC5jb21cLz9mPW05MWthcGlhbjQiLCJ1Y29kZSI6IjNvc2Jrc3lpIn0=",
+            "Zone_id": "424"
+        },
+        {
+            "imgFullPath": "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/b80a12bf8621445c9267d92dc7757640.jpg",
+            "url": "http://click.union.vip.com/redirect.php?url=eyJjaGFuIjoibTkxa2FwaWFuNSIsInNjaGVtZWNvZGUiOiIyZjQxemdoYSIsImRlc3R1cmwiOiJodHRwOlwvXC9tLnZpcC5jb21cL25ld2JlYXV0eS5odG1sIiwidWNvZGUiOiIzb3Nia3N5aSJ9",
+            "Zone_id": "425"
+        }
+    ]
+}

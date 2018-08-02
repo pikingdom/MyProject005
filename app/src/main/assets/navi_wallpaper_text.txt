@@ -1,0 +1,35 @@
+
+{
+  "PicList": [
+    {
+      "PicId": 414457,
+      "PicUrl": "http://pandahome.ifjing.com/android/pic.aspx?Action=3&mt=4&pid=6&picId=414457&position=7061&rslt=RES_720x1280&py=1&st=1&wp=0"
+    },
+    {
+      "PicId": 414495,
+      "PicUrl": "http://pandahome.ifjing.com/android/pic.aspx?Action=3&mt=4&pid=6&picId=414495&position=7061&rslt=RES_720x1280&py=1&st=1&wp=0"
+    },
+    {
+      "PicId": 414650,
+      "PicUrl": "http://pandahome.ifjing.com/android/pic.aspx?Action=3&mt=4&pid=6&picId=414650&position=7061&rslt=RES_720x1280&py=1&st=1&wp=0"
+    }
+  ],
+  "TextList": [
+    {
+      "TextId": 1548992,
+      "Content": "风从袖中过的是夏天",
+      "Author": "这些都是你给我的爱"
+    },
+    {
+      "TextId": 1548993,
+      "Content": "“我们都曾很仔细的定义过所谓幸福的生活，只是我们都没有好好活。”",
+      "Author": "陪安东尼度过漫长岁月"
+    },
+    {
+      "TextId": 1548996,
+      "Content": "原来 永恒的第一秒也没有开始呀",
+      "Author": "陪安东尼度过漫长岁月"
+    }
+  ],
+  "EnabledVideoPaper": 1
+}

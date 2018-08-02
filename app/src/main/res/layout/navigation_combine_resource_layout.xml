@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.combine.WallpaperView
+        android:id="@+id/wallpaper_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.nd.hilauncherdev.plugin.navigation.widget.combine.WallpaperView>
+
+    <com.nd.hilauncherdev.plugin.navigation.widget.combine.VideoNavigationView
+        android:id="@+id/video_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:id="@+id/video_navigation_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</RelativeLayout>

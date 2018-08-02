@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/book_recommend_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/loading_info_all"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <include
+            android:id="@+id/loading"
+            layout="@layout/theme_shop_v6_loading_style_mid" />
+
+        <TextView
+            android:id="@+id/loading_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="加载中"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/book_recommend_list_v"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="1"
+        android:background="#ffffffff"
+        android:overScrollMode="never" />
+
+</LinearLayout>

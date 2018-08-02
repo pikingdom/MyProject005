@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ListView
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:id = "@+id/main_list"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:cacheColorHint="#00000000"
+        android:background="@color/common_header_content_sep"
+        android:scrollbars="none"
+        android:listSelector="@drawable/list_selector_bg"
+        android:layout_gravity="center_horizontal"
+        />
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/main_list"
+        android:layout_marginLeft="5dp"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:cacheColorHint="#00000000"
+        android:background="#ffffffff"
+        android:scrollbarThumbVertical="@drawable/list_view_scroll_bar_thumb"
+        android:listSelector="@drawable/list_selector_bg"
+        android:layout_gravity="center_horizontal"
+        android:id = "@+id/sub_list">
+    </ListView>
+</RelativeLayout>

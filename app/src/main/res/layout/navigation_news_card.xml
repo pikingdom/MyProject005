@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/navi_news_big_all"
+        android:layout_width="wrap_content"
+        android:layout_height="82dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/navi_news_ic"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/jrtt_new_big_bg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/navi_news_big_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="央企重组刺激股价暴涨 布局七大投资主线"
+                android:textColor="@drawable/card_item_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/navi_news_big_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="央企的实质性重组其实已经在A股出现了多个例子,如南车北车，造成了股价的大幅异动,七大投资主线已开始布局"
+                android:textColor="#a9a6a8"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/navi_news_title_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/navi_card_item_text_padding"
+            android:paddingTop="@dimen/navi_card_item_text_padding"
+            android:singleLine="true"
+            android:text="甘肃口岸首次截获境外甘蔗簇粉蚧和小黄家蚁"
+            android:textColor="@drawable/card_item_text"
+            android:textSize="14sp" />
+        
+        <TextView
+            android:id="@+id/navi_news_title_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:paddingBottom="@dimen/navi_card_item_text_padding"
+            android:paddingTop="@dimen/navi_card_item_text_padding"
+            android:singleLine="true"
+            android:text="中国为何不批量装备枭龙战机?"
+            android:textColor="@drawable/card_item_text"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

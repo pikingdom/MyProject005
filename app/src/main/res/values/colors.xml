@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="common_header_title_color">#404040</color>
+    <color name="myphone_common_bg_color">#f9fafb</color>
+    <color name="searchbox_title_text_color">#32B5E5</color>
+    <color name="navi_card_recommand_text">#8e8891</color>
+    <color name="navi_card_more_text">#818089</color>
+    <color name="navi_card_more_text_pressed">#ffffff</color>
+    <color name="navi_video_app_text">#4e4e4e</color>
+    <color name="card_base_btn_pressed">#777b7b83</color>
+    <color name="subscribe_loading_drawable_color">#cccccc</color>
+    <color name="card_base_btn_normal">#00000000</color>
+    <color name="navi_card_item_text">#ffffff</color>
+    <color name="funny_card_item_text">#66ffffff</color>
+    <color name="subscribe_unselected_color">#707070</color>
+    <color name="navi_card_item_text_pressed">#008395</color>
+    <color name="navi_card_subscribe_selected">#00BCD5</color>
+    <color name="navi_card_item_sub_text">#a9a6aa</color>
+    <color name="list_item_text">#3c3c3c</color>
+    <color name="white">#ffffffff</color>
+    <color name="game_card_white">#ffffff</color>
+    <color name="game_card_h5_open_normal">#ffc62c</color>
+    <color name="common_header_bg">#E0E0E0</color>
+    <color name="common_header_bg_sep">#233444</color>
+    <color name="common_header_backgroud">#FFFFFF</color>
+    <color name="common_header_content_sep">#F4F4F4</color>
+    <color name="common_content_backgroud">#FAFAFA</color>
+    <color name="dialog_title_color">#1c1c1c</color>
+    <color name="dialog_content_color">#676b6e</color>
+    <color name="notify_skip_color">#7f000000</color>
+    <color name="notify_skip_color_title">#7fffffff</color>
+    <color name="notify_skip_color_title2">#33ffffff</color>
+    <color name="notify_press">#19000000</color>
+
+    <color name="market_android_black">#ff000000</color>
+    <color name="market_android_gray">#ff808080</color>
+    <color name="common_title_little_text_color">#00bcd5</color>
+    <color name="common_little_text_color">#999999</color>
+    <drawable name="list_selector_bg">#00ffffff</drawable>
+    <drawable name="transparent_background">#ffffffff</drawable>
+    <drawable name="banner_background">#ffffc52d</drawable>
+    <drawable name="taobao_banner_background">#de596a</drawable>
+    <color name="navigation_search_bg">#ffeeeeee</color>
+    <drawable name="transparent_drawable">#00ffffff</drawable>
+    <color name="transparent_color">#00ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="subscribe_detail_header">#ffaadddd</color>
+    <color name="theme_shop_v6_tab_bg">#eef1f6</color>
+
+    <color name="tb_activity_desc_color_gray">#727272</color>
+    <color name="tao_bao_primary">#fb547e</color>
+</resources>

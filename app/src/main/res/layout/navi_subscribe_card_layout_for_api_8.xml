@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                             android:orientation="vertical"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent">
+
+
+<include layout="@layout/navi_subscribe_card_recommend_layout_for_8"
+         android:id = "@+id/navi_subscribe_card_recommend_layout_id"/>
+<include layout="@layout/navi_subscribe_card_article_layout"
+         android:id = "@+id/navi_subscribe_card_article_layout_id"/>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#eef1f6">
+
+    <LinearLayout
+        android:id="@+id/market_wait"
+        android:layout_width="fill_parent"
+        android:layout_height="46.0dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/news_loading_bj_bottom"
+            android:indeterminateBehavior="repeat"
+            android:indeterminateDrawable="@drawable/news_loading_bottom_ani"
+            android:indeterminateOnly="true" />
+
+        <TextView
+            android:id="@+id/market_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/market_txt_loading"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/market_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="46.0dip"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_market_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="46.0dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:drawableLeft="@drawable/ic_list_refresh_fail"
+            android:text="@string/market_common_network_refresh"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/market_list_end"
+        android:layout_width="match_parent"
+        android:layout_height="46.0dip"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/tv_market_list_end"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/market_common_list_end"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

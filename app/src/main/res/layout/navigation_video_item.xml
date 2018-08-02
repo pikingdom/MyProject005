@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/navi_video_item_ic"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:src="@drawable/com_nd_quick_activity_anyshareguideactivity" />
+
+    <TextView
+        android:id="@+id/navi_video_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频名称1"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>
