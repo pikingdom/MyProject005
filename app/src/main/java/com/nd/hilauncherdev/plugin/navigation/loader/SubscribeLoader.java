@@ -13,9 +13,9 @@ import com.nd.hilauncherdev.plugin.navigation.bean.SubscribeCateBean;
 import com.nd.hilauncherdev.plugin.navigation.bean.SubscribeSiteBean;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.FileUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.ThreadUtil;
-import com.nd.hilauncherdev.plugin.navigation.util.URLs;
 import com.nd.hilauncherdev.plugin.navigation.widget.subscribe.SubscribeHelper;
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -98,12 +98,12 @@ public class SubscribeLoader extends CardDataLoader {
     @Override
     public String getCardShareImageUrl() {
         if(CommonLauncherControl.DX_PKG){
-            return "http://pic.ifjing.com/rbpiczy/pic/2016/09/19/fce6d8ad2daa4497be245b1b8e691e71.jpg";
+            return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/09/19/fce6d8ad2daa4497be245b1b8e691e71.jpg";
         }
         if(CommonLauncherControl.AZ_PKG){
-            return "http://pic.ifjing.com/rbpiczy/pic/2016/09/19/0d9847c2d6a845fb9a02eb12aa077eff.jpg";
+            return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/09/19/0d9847c2d6a845fb9a02eb12aa077eff.jpg";
         }
-        return "http://pic.ifjing.com/rbpiczy/pic/2016/08/04/6e5ebeae8f72467ead991104a680f1e3.jpg";
+        return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/08/04/6e5ebeae8f72467ead991104a680f1e3.jpg";
     }
 
     @Override
@@ -118,7 +118,7 @@ public class SubscribeLoader extends CardDataLoader {
 
     @Override
     public String getCardDetailImageUrl() {
-        return "http://pic.ifjing.com/rbpiczy/pic/2016/08/02/d0063ca66cd841b7a721c8ee05d1bb70.png";
+        return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/08/02/d0063ca66cd841b7a721c8ee05d1bb70.png";
     }
 
     @Override
@@ -414,7 +414,7 @@ public class SubscribeLoader extends CardDataLoader {
             String jsonParams = paramsJO.toString();
             HashMap<String, String> paramsMap = new HashMap<String, String>();
             LauncherHttpCommon.addGlobalRequestValue(paramsMap, context, jsonParams);
-            LauncherHttpCommon httpCommon = new LauncherHttpCommon(URLs.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6012");
+            LauncherHttpCommon httpCommon = new LauncherHttpCommon(UrlConstant.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6012");
             ServerResultHeader csResult = httpCommon.getResponseAsCsResultPost(paramsMap, jsonParams);
             if (csResult == null || !csResult.isRequestOK()) {
                 return cateBeans;
@@ -457,7 +457,7 @@ public class SubscribeLoader extends CardDataLoader {
             String jsonParams = paramsJO.toString();
             HashMap<String, String> paramsMap = new HashMap<String, String>();
             LauncherHttpCommon.addGlobalRequestValue(paramsMap, context, jsonParams);
-            LauncherHttpCommon httpCommon = new LauncherHttpCommon(URLs.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6013");
+            LauncherHttpCommon httpCommon = new LauncherHttpCommon(UrlConstant.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6013");
             ServerResultHeader csResult = httpCommon.getResponseAsCsResultPost(paramsMap, jsonParams);
             if (csResult == null || !csResult.isRequestOK()) {
                 return cateBeans;
@@ -501,7 +501,7 @@ public class SubscribeLoader extends CardDataLoader {
             String jsonParams = paramsJO.toString();
             HashMap<String, String> paramsMap = new HashMap<String, String>();
             LauncherHttpCommon.addGlobalRequestValue(paramsMap, context, jsonParams);
-            LauncherHttpCommon httpCommon = new LauncherHttpCommon(URLs.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6015");
+            LauncherHttpCommon httpCommon = new LauncherHttpCommon(UrlConstant.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6015");
             ServerResultHeader csResult = httpCommon.getResponseAsCsResultPost(paramsMap, jsonParams);
             if (csResult == null || !csResult.isRequestOK()) {
                 return "";
@@ -561,7 +561,7 @@ public class SubscribeLoader extends CardDataLoader {
             String jsonParams = paramsJO.toString();
             HashMap<String, String> paramsMap = new HashMap<String, String>();
             LauncherHttpCommon.addGlobalRequestValue(paramsMap, context, jsonParams);
-            LauncherHttpCommon httpCommon = new LauncherHttpCommon(URLs.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6014");
+            LauncherHttpCommon httpCommon = new LauncherHttpCommon(UrlConstant.PANDAHOME_EX_BASE_URL + "action.ashx/UserInfoAction/6014");
             ServerResultHeader csResult = httpCommon.getResponseAsCsResultPost(paramsMap, jsonParams);
             if (csResult == null || !csResult.isRequestOK()) {
                 return "";

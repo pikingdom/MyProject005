@@ -39,7 +39,7 @@ public class TaoBaoExtPageView extends GoTopListView implements PageActionInterf
     //淘宝购物屏headerView
     TaobaoCardWrapper mTaobaoCardWrapper;
 
-    long mLastLeaveTime = 0;
+    long mLastLeaveTime = 0;//控制自动刷新
     private boolean needMargin = true;
 
     public TaoBaoExtPageView(Context context) {

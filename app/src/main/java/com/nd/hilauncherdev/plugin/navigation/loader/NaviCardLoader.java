@@ -7,6 +7,7 @@ import com.nd.hilauncherdev.plugin.navigation.Card;
 import com.nd.hilauncherdev.plugin.navigation.CardManager;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
 import com.nd.hilauncherdev.plugin.navigation.util.FileUtil;
 
@@ -45,7 +46,7 @@ public class NaviCardLoader {
         String jsonParams = paramsJO.toString();
         HashMap<String, String> paramsMap = new HashMap<String, String>();
         LauncherHttpCommon.addGlobalRequestValue(paramsMap, context, jsonParams);
-        LauncherHttpCommon httpCommon = new LauncherHttpCommon("http://pandahome.ifjing.com/action.ashx/otheraction/9006");
+        LauncherHttpCommon httpCommon = new LauncherHttpCommon(UrlConstant.HOST+"action.ashx/otheraction/9006");
         ServerResultHeader csResult = httpCommon.getResponseAsCsResultPost(paramsMap, jsonParams);
         if (csResult != null) {
             if (csResult.isRequestOK()) {

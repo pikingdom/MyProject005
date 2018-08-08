@@ -5,19 +5,16 @@ import android.os.Build;
 
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherLibUtil;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 public class URLs {
 
-	public static final String PANDAHOME_BASE_URL = "http://pandahome.ifjing.com/";
-	
-	//服务端第三方接口所使用的域名
-	public static final String PANDAHOME_EX_BASE_URL = "http://pandahomeex.ifjing.com/";
-	
+	public static final String PANDAHOME_BASE_URL = UrlConstant.HOST;
+
 	public final static String NAVIGATION_URL = PANDAHOME_BASE_URL + "Soft.ashx/navv6?mt=4&fwv=%s&pc=%s&iconpc=%s&vc=%s&DivideVersion=%s&iconCount=%s";
-	public final static String NAVIGATION_URL_EN = "http://bbx.pandaapp.com/soft.ashx/nav?mt=4&tfv=40000&pc=%s&vc=%s";// 海外版
 //    /**
 //     * 广告数据URL
 //     */

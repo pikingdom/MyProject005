@@ -263,10 +263,7 @@ public class NavigationData {
 	}
 
 	public static String getNavigationUrl(Context ctx){
-		if(Global.isZh(ctx))
-			return URLs.NAVIGATION_URL;
-
-		return URLs.NAVIGATION_URL_EN;
+		return URLs.NAVIGATION_URL;
 	}
 
 	public static String getNavigationPath(Context ctx){

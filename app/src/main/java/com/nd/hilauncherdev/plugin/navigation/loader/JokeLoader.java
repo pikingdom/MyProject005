@@ -18,6 +18,7 @@ import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.bean.Joke;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.FileUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.ThreadUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.URLs;
@@ -48,12 +49,12 @@ public class JokeLoader extends CardDataLoader {
 	@Override
 	public String getCardShareImageUrl() {
 		if(CommonLauncherControl.DX_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/04/25/823ca375146241a493de87319ba9d8eb.jpg";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/04/25/823ca375146241a493de87319ba9d8eb.jpg";
 		}
 		if(CommonLauncherControl.AZ_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/05/19/4af3153a844e4afdb1ef350894db7a8f.png";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/05/19/4af3153a844e4afdb1ef350894db7a8f.png";
 		}
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/26913f79f9c7448a84a97c435bae10ad.jpg";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/26913f79f9c7448a84a97c435bae10ad.jpg";
 	}
 
 	@Override
@@ -68,7 +69,7 @@ public class JokeLoader extends CardDataLoader {
 
 	@Override
 	public String getCardDetailImageUrl() {
-		return  "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/0ececf3b7f2a4b18830ebfd801a3a575.png";
+		return  UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/0ececf3b7f2a4b18830ebfd801a3a575.png";
 	}
 
 	@Override

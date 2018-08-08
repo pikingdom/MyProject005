@@ -5,6 +5,7 @@ import android.os.Environment;
 import android.text.TextUtils;
 
 import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 
 public class CommonGlobal {
 	public static final String BAIDU_LAUNCHER_PKG_NAME = "com.baidu.android.launcher";
@@ -15,9 +16,9 @@ public class CommonGlobal {
 	public static String PKG_NAME = "com.nd.android.pandahome2";
 	public static final String TAG = "CommonGlobal";
 	
-	public static final String URL_VIP="http://url.felink.com/V3ANFb";
+	public static final String URL_VIP= UrlConstant.HTTP_URL_FELINK_COM + "V3ANFb";
 	public static final String URL_HAO123 = "http://m.hao123.com/?union=1&from=1017491s&tn=ops1017491s";
-	public static final String URL_AITAOBAO = "http://url.ifjing.com/EreIvi";
+	public static final String URL_AITAOBAO = UrlConstant.HTTP_URL_IFJING_COM + "EreIvi";
 
 //	public static final String URL_58="http://url.ifjing.com/RnEFne";
 //	public static final String URL_58_ANALYSIS="http://luna.58.com/m/activity?utm_source=58un&spm=m-37368978192654-ms-f-801.chunyunhuangye_91desk0218";

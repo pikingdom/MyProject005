@@ -16,6 +16,7 @@ import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.bean.TravelBean;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.FileUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.URLs;
 
@@ -38,12 +39,12 @@ public class TravelDataLoader extends CardDataLoader {
 	@Override
 	public String getCardShareImageUrl() {
 		if(CommonLauncherControl.DX_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/04/25/ae33b22cd0a74fcaa3439bf20c1e2219.jpg";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/04/25/ae33b22cd0a74fcaa3439bf20c1e2219.jpg";
 		}
 		if(CommonLauncherControl.AZ_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/05/19/660e1c82550b434fbd1457ae08de54ab.png";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/05/19/660e1c82550b434fbd1457ae08de54ab.png";
 		}
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/048ea2f9e07e4f2a84cfcc1d956f0add.jpg";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/048ea2f9e07e4f2a84cfcc1d956f0add.jpg";
 	}
 
 	@Override
@@ -58,7 +59,7 @@ public class TravelDataLoader extends CardDataLoader {
 
 	@Override
 	public String getCardDetailImageUrl() {
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/6a14ae34378d4c86b58638402f381563.png";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/6a14ae34378d4c86b58638402f381563.png";
 	}
 
 	public void loadDataS(Context context, final Card card, boolean needRefreshData, int showSize) {

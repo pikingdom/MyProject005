@@ -21,6 +21,7 @@ import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.bean.JrttBean;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.FileUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.TelephoneUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.ThreadUtil;
@@ -132,12 +133,12 @@ public class NewsLoader extends CardDataLoader {
 	@Override
 	public String getCardShareImageUrl() {
 		if(CommonLauncherControl.DX_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/04/25/e23a5be1113e4c60ab45884d39a49fae.jpg";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/04/25/e23a5be1113e4c60ab45884d39a49fae.jpg";
 		}
 		if(CommonLauncherControl.AZ_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/05/19/45595b18fe0c420c9f6c51c9a1fdf592.png";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/05/19/45595b18fe0c420c9f6c51c9a1fdf592.png";
 		}
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/4fb5a01c40a34c328867f1fce928151c.jpg";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/4fb5a01c40a34c328867f1fce928151c.jpg";
 	}
 
 	@Override
@@ -152,7 +153,7 @@ public class NewsLoader extends CardDataLoader {
 
 	@Override
 	public String getCardDetailImageUrl() {
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/8aa6192e84d84a22b89b9f7dc5a9e10b.png";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/8aa6192e84d84a22b89b9f7dc5a9e10b.png";
 	}
 
 	@Override

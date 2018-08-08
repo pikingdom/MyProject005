@@ -16,6 +16,7 @@ import com.nd.hilauncherdev.plugin.navigation.CardViewHelper;
 import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.R;
 import com.nd.hilauncherdev.plugin.navigation.bean.VPHAdBean;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.AnalyticsConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.AsyncImageLoader;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
@@ -56,7 +57,7 @@ public class VPHCardViewHelper extends CardInnerViewHelperBase {
     private static final int LEFT_RIGHT_MARGIN_INTERNAL = 2;
 
     //更多精品跳转短地址
-    private static final String moreClickUrl = "http://url.felink.com/NreyUv";
+    private static final String moreClickUrl = UrlConstant.HTTP_URL_FELINK_COM+"NreyUv";
 
 
     HashMap<Integer, SoftReference<ImageView>> adImageMap = new HashMap<Integer, SoftReference<ImageView>>();

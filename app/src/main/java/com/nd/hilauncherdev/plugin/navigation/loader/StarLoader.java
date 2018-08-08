@@ -16,6 +16,7 @@ import com.nd.hilauncherdev.plugin.navigation.CardViewHelper;
 import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.FileUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.URLs;
 import com.nd.hilauncherdev.plugin.navigation.widget.StarCardViewHelper;
@@ -36,12 +37,12 @@ public class StarLoader extends CardDataLoader {
 	@Override
 	public String getCardShareImageUrl() {
 		if (CommonLauncherControl.DX_PKG) {
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/04/25/59e65f98533346d9a109cecb82a10a20.jpg";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/04/25/59e65f98533346d9a109cecb82a10a20.jpg";
 		}
 		if (CommonLauncherControl.AZ_PKG) {
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/05/19/439192ca23e1483a99a7f5866e891226.png";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/05/19/439192ca23e1483a99a7f5866e891226.png";
 		}
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/e03554e339a1452d929c4c36508a215c.jpg";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/e03554e339a1452d929c4c36508a215c.jpg";
 	}
 
 	@Override

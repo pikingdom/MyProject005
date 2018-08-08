@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.nd.hilauncherdev.plugin.navigation.Card;
 import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 
 import java.util.ArrayList;
 
@@ -21,12 +22,12 @@ public class HotwordLoaderStub extends CardDataLoader {
     @Override
     public String getCardShareImageUrl() {
         if (CommonLauncherControl.DX_PKG) {
-            return "http://pic.ifjing.com/rbpiczy/pic/2016/04/25/6b863c24e9f9404e9e7f3e71a157b9c9.jpg";
+            return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/04/25/6b863c24e9f9404e9e7f3e71a157b9c9.jpg";
         }
         if (CommonLauncherControl.AZ_PKG) {
-            return "http://pic.ifjing.com/rbpiczy/pic/2016/05/19/667c477a8ae94a18ae87fe87852d8c79.png";
+            return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/05/19/667c477a8ae94a18ae87fe87852d8c79.png";
         }
-        return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/2a2fc54cf48842d8a0528caf29dfd249.jpg";
+        return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/2a2fc54cf48842d8a0528caf29dfd249.jpg";
     }
 
     @Override
@@ -41,7 +42,7 @@ public class HotwordLoaderStub extends CardDataLoader {
 
     @Override
     public String getCardDetailImageUrl() {
-        return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/897c35f9f6aa43269dd2f6872a3f8977.png";
+        return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/897c35f9f6aa43269dd2f6872a3f8977.png";
     }
 
     @Override

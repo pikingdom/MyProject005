@@ -20,6 +20,7 @@ import com.nd.hilauncherdev.plugin.navigation.CardViewHelper;
 import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.R;
 import com.nd.hilauncherdev.plugin.navigation.bean.JrttBean;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.recommend.RecommendAppHelper;
 import com.nd.hilauncherdev.plugin.navigation.util.AnalyticsConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
@@ -48,7 +49,7 @@ public class NewsCardViewHelper extends CardInnerViewHelperBase {
 
 	public static final String TIANTIAN_KUAIBAO_NET = "kb.qq.com";
 
-	public static final String MORE_NEWS_URL = "http://url.felink.com/y6zqAb";
+	public static final String MORE_NEWS_URL = UrlConstant.HTTP_URL_FELINK_COM+"y6zqAb";
 	public static final int MORE_NEWS_RES_ID = -10000017;
 	@Override
 	public void showDataS(final NavigationView2 navigationView, final Card card, Message msg) {

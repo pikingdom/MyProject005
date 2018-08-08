@@ -20,6 +20,7 @@ import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.R;
 import com.nd.hilauncherdev.plugin.navigation.bean.TaobaoProductsItem;
 import com.nd.hilauncherdev.plugin.navigation.loader.ShoppingLoader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.AnalyticsConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
 import com.nd.hilauncherdev.plugin.navigation.util.CvAnalysisConstant;
@@ -121,7 +122,7 @@ public class ShoppingCardViewHelper extends CardInnerViewHelperBase {
 		cardView.findViewById(R.id.navi_card_base_more).setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				LauncherCaller.openUrl(mContext, "", "http://url.felink.com/7vyiYr", IntegralTaskIdContent.NAVIGATION_SHOPPING_GUIDE,
+				LauncherCaller.openUrl(mContext, "", UrlConstant.HTTP_URL_FELINK_COM+"7vyiYr", IntegralTaskIdContent.NAVIGATION_SHOPPING_GUIDE,
 						CvAnalysisConstant.NAVIGATION_SCREEN_INTO,CvAnalysisConstant.NAVIGATION_SCREEN_CLASSIFICATION_SHOP_GUIDE_HOTWORD_CLICK,
 						CvAnalysisConstant.NAVIGATION_SCREEN_CLASSIFICATION_SHOP_RES_ID,CvAnalysisConstant.RESTYPE_LINKS);
 			}

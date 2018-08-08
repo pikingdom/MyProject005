@@ -16,6 +16,7 @@ import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.bean.TaobaoProductsItem;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.FileUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.ThreadUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.URLs;
@@ -45,12 +46,12 @@ public class ShoppingLoader extends CardDataLoader {
 	@Override
 	public String getCardShareImageUrl() {
 		if(CommonLauncherControl.DX_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/04/25/e9685541511b4c108f39ab20375a9aa4.jpg";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/04/25/e9685541511b4c108f39ab20375a9aa4.jpg";
 		}
 		if(CommonLauncherControl.AZ_PKG){
-			return "http://pic.ifjing.com/rbpiczy/pic/2016/05/19/bbeb5fc9552444d0b82202354c266b9e.png";
+			return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/05/19/bbeb5fc9552444d0b82202354c266b9e.png";
 		}
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/90661324e5314cb78fb03314275e6076.jpg";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/90661324e5314cb78fb03314275e6076.jpg";
 	}
 
 	@Override
@@ -65,7 +66,7 @@ public class ShoppingLoader extends CardDataLoader {
 
 	@Override
 	public String getCardDetailImageUrl() {
-		return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/3eebdbebe7fe48dd9cc17054762500e6.png";
+		return UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/3eebdbebe7fe48dd9cc17054762500e6.png";
 	}
 
 	@Override

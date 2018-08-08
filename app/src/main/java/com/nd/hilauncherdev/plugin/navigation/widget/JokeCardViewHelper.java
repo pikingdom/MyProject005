@@ -14,6 +14,7 @@ import com.nd.hilauncherdev.plugin.navigation.Card;
 import com.nd.hilauncherdev.plugin.navigation.CardViewHelper;
 import com.nd.hilauncherdev.plugin.navigation.R;
 import com.nd.hilauncherdev.plugin.navigation.bean.Joke;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.AnalyticsConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.CvAnalysisConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.LauncherCaller;
@@ -21,7 +22,7 @@ import com.nd.hilauncherdev.plugin.navigation.util.LauncherCaller;
 public class JokeCardViewHelper extends CardInnerViewHelperBase {
 
 	// 使用短链接，目标地址：www.budejie.com/m/?baidu91
-	public static final String url = "http://url.felink.com/QbAfIv";
+	public static final String url = UrlConstant.HTTP_URL_FELINK_COM+"QbAfIv";
 	public JokeCardViewHelper(final NavigationView2 navigationView, Card card, Context context) {
 		super(navigationView, card, context);
 	}

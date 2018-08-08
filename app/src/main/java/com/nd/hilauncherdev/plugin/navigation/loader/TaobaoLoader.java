@@ -10,6 +10,7 @@ import com.nd.hilauncherdev.plugin.navigation.bean.TaobaoProduct;
 import com.nd.hilauncherdev.plugin.navigation.bean.TaobaoSplashSale;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.ServerResultHeader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.DateUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.SharedPreferencesUtil;
 
@@ -43,7 +44,7 @@ public class TaobaoLoader {
      * @return
      */
     public static List<TaobaoCate> getNetTaobaoCateList(Context ctx) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5039";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5039";
         JSONObject jsonObject = new JSONObject();
         String jsonParams = "";
         HashMap<String, String> paramsMap = new HashMap<String, String>();
@@ -78,7 +79,7 @@ public class TaobaoLoader {
      * 返回淘宝首页列表，包括阿里妈推荐广告列表和人工选品的商品，广告列表
      */
     public static List<TaobaoProduct> getNetTaoBaoHomeList(Context context, int pageIndex, int pageSize) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5062";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5062";
         Map<String, Object> params = new HashMap<>();
         params.put("SlotId", 67142);// 67142和67143是淘宝分配给我们的id
         params.put("LayoutType", 12);
@@ -118,7 +119,7 @@ public class TaobaoLoader {
     public static TaoBaoCollection getNetTaoBaoCollectionProducts(Context context, int resId, int pageIndex, int pageSize) {
         if (resId <= 0) return null;
 
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5063";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5063";
         Map<String, Object> params = new HashMap<>();
         params.put("res_id", resId);
         params.put("pageindex", pageIndex);
@@ -176,7 +177,7 @@ public class TaobaoLoader {
      * @return
      */
     public static ServerResultHeader getTaobaoCardSetting(Context ctx) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5040";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5040";
         String jsonParams = "";
         HashMap<String, String> paramsMap = new HashMap<String, String>();
         LauncherHttpCommon.addGlobalRequestValue(paramsMap, ctx.getApplicationContext(), jsonParams);
@@ -210,7 +211,7 @@ public class TaobaoLoader {
      * @return
      */
     public static List<TaobaoCps> getTaobaoCps(Context ctx) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5042";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5042";
         String jsonParams = "";
         HashMap<String, String> paramsMap = new HashMap<String, String>();
         LauncherHttpCommon.addGlobalRequestValue(paramsMap, ctx.getApplicationContext(), jsonParams);
@@ -244,7 +245,7 @@ public class TaobaoLoader {
      * @return
      */
     public static ServerResultHeader getTaobaoHeadLine(Context ctx) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5041";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5041";
         String jsonParams = "";
         HashMap<String, String> paramsMap = new HashMap<String, String>();
         LauncherHttpCommon.addGlobalRequestValue(paramsMap, ctx.getApplicationContext(), jsonParams);
@@ -280,7 +281,7 @@ public class TaobaoLoader {
      * @return
      */
     public static List<TaobaoSplashSale> getSplashSales(Context ctx, int num) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5043";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5043";
         JSONObject jsonObject = new JSONObject();
         String jsonParams = "";
         try {
@@ -350,7 +351,7 @@ public class TaobaoLoader {
      * @return
      */
     public static long getServerTime(Context ctx) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/commonaction/1";
+        String requestUrl = UrlConstant.HOST + "action.ashx/commonaction/1";
         String jsonParams = "";
         HashMap<String, String> paramsMap = new HashMap<String, String>();
         LauncherHttpCommon.addGlobalRequestValue(paramsMap, ctx.getApplicationContext(), jsonParams);
@@ -478,7 +479,7 @@ public class TaobaoLoader {
      */
     @Deprecated
     private static JSONArray getNetTaobaoProductsListJson(Context ctx, int requestCount) {
-        String requestUrl = "http://pandahome.ifjing.com/action.ashx/distributeaction/5034";
+        String requestUrl = UrlConstant.HOST + "action.ashx/distributeaction/5034";
         JSONObject jsonObject = new JSONObject();
         String jsonParams = "";
         try {

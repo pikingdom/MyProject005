@@ -20,6 +20,7 @@ import com.nd.hilauncherdev.plugin.navigation.NavigationData;
 import com.nd.hilauncherdev.plugin.navigation.R;
 import com.nd.hilauncherdev.plugin.navigation.WebSiteItem;
 import com.nd.hilauncherdev.plugin.navigation.loader.NaviSiteLoader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.BitmapUtils;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
 import com.nd.hilauncherdev.plugin.navigation.util.DateUtil;
@@ -99,9 +100,9 @@ public class NavigationLoader {
 	/**
 	 * 导航推荐链接
 	 */
-	private static final String[] favoriteUrls = { "http://url.felink.com/2muE3a",
-			"http://url.felink.com/rQZNZ3", "http://url.felink.com/Anu2qa",
-			"http://url.felink.com/3iqQja", "http://url.ifjing.com/aqqiUn"};
+	private static final String[] favoriteUrls = { UrlConstant.HTTP_URL_FELINK_COM+"2muE3a",
+			UrlConstant.HTTP_URL_FELINK_COM+"rQZNZ3", UrlConstant.HTTP_URL_FELINK_COM+"Anu2qa",
+			UrlConstant.HTTP_URL_FELINK_COM+"3iqQja", UrlConstant.HTTP_URL_IFJING_COM+"aqqiUn"};
 
 	private static final String[] favoriteSiteId = { "100000039", "100000080", "100000074", "100000045","100000081"};
 

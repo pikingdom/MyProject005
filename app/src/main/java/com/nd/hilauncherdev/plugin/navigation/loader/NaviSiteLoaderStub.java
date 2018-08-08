@@ -4,6 +4,7 @@ import android.content.Context;
 
 import com.nd.hilauncherdev.plugin.navigation.Card;
 import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 
 import java.util.ArrayList;
 
@@ -22,12 +23,12 @@ public class NaviSiteLoaderStub extends CardDataLoader {
     @Override
     public String getCardShareImageUrl() {
         if (CommonLauncherControl.DX_PKG) {
-            return "http://pic.ifjing.com/rbpiczy/pic/2016/04/25/aaae1e8e54424c639de462a04a2bfd31.jpg";
+            return UrlConstant.HTTP_PIC_IFJING_COM + "rbpiczy/pic/2016/04/25/aaae1e8e54424c639de462a04a2bfd31.jpg";
         }
         if (CommonLauncherControl.AZ_PKG) {
-            return "http://pic.ifjing.com/rbpiczy/pic/2016/05/19/a7e4e587760144b296bfede42c76fd74.png";
+            return UrlConstant.HTTP_PIC_IFJING_COM + "rbpiczy/pic/2016/05/19/a7e4e587760144b296bfede42c76fd74.png";
         }
-        return "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/2e28380850484e24ae698306a75e112d.jpg";
+        return UrlConstant.HTTP_PIC_IFJING_COM + "rbpiczy/pic/2016/03/11/2e28380850484e24ae698306a75e112d.jpg";
     }
 
     @Override

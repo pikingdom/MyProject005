@@ -29,6 +29,7 @@ import com.nd.hilauncherdev.plugin.navigation.loader.CardDataLoader;
 import com.nd.hilauncherdev.plugin.navigation.loader.CardDataLoaderFactory;
 import com.nd.hilauncherdev.plugin.navigation.loader.NaviCardLoader;
 import com.nd.hilauncherdev.plugin.navigation.loader.NaviSiteLoader;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.share.SharedPopWindow;
 import com.nd.hilauncherdev.plugin.navigation.util.AnalyticsConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
@@ -373,9 +374,9 @@ public class CardViewHelper {
 			shareWord = dataLoader.getCardShareWord();
 			PluginUtil.invokeSubmitEvent(navigationView.activity, AnalyticsConstant.NAVIGATION_SCREEN_CARD_SHARE, dataLoader.getCardShareAnatics() );
 		}else{
-			navigationView.sharePop.setSharedContentSpecialWX(CommonLauncherControl.LAUNCHER_NAME, CommonLauncherControl.LAUNCHER_NAME+context.getString(R.string.settings_home_assistance_share_text_other)+CommonLauncherControl.DOWNLOAD_URL, CommonLauncherControl.DOWNLOAD_URL + "", uri,120);
+			navigationView.sharePop.setSharedContentSpecialWX(CommonLauncherControl.LAUNCHER_NAME, CommonLauncherControl.LAUNCHER_NAME+context.getString(R.string.settings_home_assistance_share_text_other)+ UrlConstant.DOWNLOAD_URL, UrlConstant.DOWNLOAD_URL + "", uri,120);
 		}
-		navigationView.sharePop.setSharedContentSpecialWX(subject, shareWord , CommonLauncherControl.DOWNLOAD_URL + "", uri, 120);
+		navigationView.sharePop.setSharedContentSpecialWX(subject, shareWord , UrlConstant.DOWNLOAD_URL + "", uri, 120);
 		navigationView.sharePop.showcf(navigationView.activity, navigationView);
 	}
 
@@ -624,7 +625,7 @@ public class CardViewHelper {
 		String jsonParams = paramsJO.toString();
 		HashMap<String, String> paramsMap = new HashMap<String, String>();
 		LauncherHttpCommon.addGlobalRequestValue(paramsMap, context, jsonParams);
-		LauncherHttpCommon httpCommon = new LauncherHttpCommon("http://pandahome.ifjing.com/action.ashx/otheraction/9006");
+		LauncherHttpCommon httpCommon = new LauncherHttpCommon(UrlConstant.HOST+"action.ashx/otheraction/9006");
 		ServerResultHeader csResult = httpCommon.getResponseAsCsResultPost(paramsMap, jsonParams);
 		if (csResult != null) {
 			if (csResult.isRequestOK()) {

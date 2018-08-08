@@ -1,5 +1,6 @@
 package com.nd.hilauncherdev.plugin.navigation;
 
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
 
 
@@ -10,7 +11,6 @@ public class CommonLauncherControl {
     public static boolean BD_PKG=false;//百度桌面
     public static String PKG_NAME="com.nd.android.pandahome2";//桌面包名
     public static String LAUNCHER_NAME="91桌面";//桌面名
-    public static String DOWNLOAD_URL="http://zm.ifjing.com";//桌面下载地址
 
 
     /**\
@@ -96,14 +96,14 @@ public class CommonLauncherControl {
                 CommonGlobal.BASE_DIR_NAME="/BaiduLauncher";
                 LAUNCHER_NAME="百度桌面";
                 BD_PKG=true;
-                DOWNLOAD_URL="http://android.myapp.com/myapp/detail.htm?apkName=com.nd.android.smarthome";
+                UrlConstant.DOWNLOAD_URL="http://android.myapp.com/myapp/detail.htm?apkName=com.nd.android.smarthome";
             }
             break;
             case CommonGlobal.DIANXIN_LAUNCHER_PKG_NAME:{
                 CommonGlobal.BASE_DIR_NAME="/Dianxinos";
                 LAUNCHER_NAME="点心桌面";
                 DX_PKG=true;
-                DOWNLOAD_URL="http://android.myapp.com/myapp/detail.htm?apkName=com.dianxinos.dxhome";
+                UrlConstant.DOWNLOAD_URL="http://android.myapp.com/myapp/detail.htm?apkName=com.dianxinos.dxhome";
 
             }
             break;
@@ -111,14 +111,14 @@ public class CommonLauncherControl {
                 CommonGlobal.BASE_DIR_NAME="/SmartHome";
                 LAUNCHER_NAME="安卓桌面";
                 AZ_PKG=true;
-                DOWNLOAD_URL="http://android.myapp.com/myapp/detail.htm?apkName=com.nd.android.smarthome";
+                UrlConstant.DOWNLOAD_URL="http://android.myapp.com/myapp/detail.htm?apkName=com.nd.android.smarthome";
 
             }
             break;
             default:{
                 CommonGlobal.BASE_DIR_NAME="/PandaHome2";
                 LAUNCHER_NAME="91桌面";
-                DOWNLOAD_URL="http://zm.91.com";
+                UrlConstant.DOWNLOAD_URL="http://zm.91.com";
             }
             break;
         }
