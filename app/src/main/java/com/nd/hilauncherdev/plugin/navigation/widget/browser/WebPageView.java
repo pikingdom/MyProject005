@@ -14,7 +14,6 @@ import com.nd.hilauncherdev.plugin.navigation.ConfigPreferences;
 import com.nd.hilauncherdev.plugin.navigation.R;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherLibUtil;
-import com.nd.hilauncherdev.plugin.navigation.pluginAD.ChannelUtil;
 import com.nd.hilauncherdev.plugin.navigation.uconfig.UConfig;
 import com.nd.hilauncherdev.plugin.navigation.uconfig.UConfigList;
 import com.nd.hilauncherdev.plugin.navigation.util.AnalyticsConstant;
@@ -122,8 +121,6 @@ public class WebPageView extends FrameLayout
             } else if (TelephoneUtil.getVersionName(getContext()).equalsIgnoreCase("7.6.6")) {
                 params.put("adid", "2");
             }
-        } else if (ChannelUtil.isSEMChannel(getContext())) {
-            params.put("adid", "3");
         }
 
 

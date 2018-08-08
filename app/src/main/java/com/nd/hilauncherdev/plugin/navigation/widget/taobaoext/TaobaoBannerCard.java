@@ -140,7 +140,7 @@ public class TaobaoBannerCard extends TaobaoCard {
 
     private void startDetailActivity(final Context context, AdvertSDKManager.AdvertInfo targetAd) {
         TaobaoData.getInstance().cancelBannerTimers();//离开页面停止定时器
-        AdvertSDKManager.submitClickEvent(mContext, mHandler, targetAd);
+//        AdvertSDKManager.submitClickEvent(mContext, mHandler, targetAd);
         CvAnalysis.submitClickEvent(mContext.getApplicationContext(), CvAnalysisConstant.TAOBAO_SCREEN_PAGEID, CvAnalysisConstant.TAOBAO_SCREEN_POS_BANNER, targetAd.id, CvAnalysisConstant.RESTYPE_ADS);
         Intent intent = new Intent();
         intent.setClass(mContext, NewsDetailActivity.class);
@@ -150,7 +150,7 @@ public class TaobaoBannerCard extends TaobaoCard {
     }
 
     private void submitEventProcess(AdvertSDKManager.AdvertInfo entity){
-        AdvertSDKManager.submitShowEvent(mContext, mHandler, entity);
+//        AdvertSDKManager.submitShowEvent(mContext, mHandler, entity);
         //记录要展示的事件
         if (type == CardType.MULTIBANNER)
             CvAnalysis.submitShowEvent(mContext.getApplicationContext(), CvAnalysisConstant.TAOBAO_SCREEN_PAGEID, CvAnalysisConstant.TAOBAO_SCREEN_POS_BANNER, entity.id, CvAnalysisConstant.RESTYPE_ADS);
@@ -267,7 +267,8 @@ public class TaobaoBannerCard extends TaobaoCard {
         ThreadUtil.executeMore(new Runnable() {
             @Override
             public void run() {
-                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(mContext, "58");
+//                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(mContext, "58");
+                final List<AdvertSDKManager.AdvertInfo> ads = new ArrayList<AdvertSDKManager.AdvertInfo>();
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
@@ -290,7 +291,8 @@ public class TaobaoBannerCard extends TaobaoCard {
         ThreadUtil.executeMore(new Runnable() {
             @Override
             public void run() {
-                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(mContext, "57");
+//                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(mContext, "57");
+                final List<AdvertSDKManager.AdvertInfo> ads = new ArrayList<AdvertSDKManager.AdvertInfo>();
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {

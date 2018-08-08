@@ -698,14 +698,14 @@ public abstract class JCVideoPlayer extends FrameLayout implements View.OnClickL
 
     protected void onShowVideoAd(){
 //        Log.i("llbeing","onShowVideoAd:");
-        AdvertSDKManager.submitVideoShowEvent(getContext(),advertInfo);
+//        AdvertSDKManager.submitVideoShowEvent(getContext(),advertInfo);
         CvAnalysis.submitShowEvent(NavigationView2.activity, BaseNavigationSearchView.CV_PAGE_ID, CvAnalysisConstant.NAVIGATION_SCREEN_VIDEO_LIST_VIDEO_AD,
                 advertInfo.id, CvAnalysisConstant.RESTYPE_ADS);
     }
 
     protected void onPlayVideoAd(int state){
 //        Log.i("llbeing","onPlayVideoAd:"+state);
-        AdvertSDKManager.submitVideoPlayEvent(getContext(),advertInfo,state);
+//        AdvertSDKManager.submitVideoPlayEvent(getContext(),advertInfo,state);
     }
 
     private boolean report_1_4 = false;

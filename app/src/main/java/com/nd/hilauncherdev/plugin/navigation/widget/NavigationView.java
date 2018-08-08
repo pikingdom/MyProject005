@@ -1189,7 +1189,7 @@ public class NavigationView extends BaseNavigationView implements RefreshCallBac
     private void onPostExposedAnaticsForCustom() {
         AdvertSDKManager.AdvertInfo advertInfo = NavigationAdHelper.getNowChangeAdvertInfo();
         if (advertInfo != null) {
-            AdvertSDKManager.submitExposureEvent(getContext(), advertInfo);
+//            AdvertSDKManager.submitExposureEvent(getContext(), advertInfo);
         }
     }
 

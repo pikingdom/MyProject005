@@ -341,7 +341,7 @@ public class NavigationFavoriteSiteView extends GridView implements View.OnTouch
 		if(recommandSiteList != null && recommandSiteList.size() > 0){
 			for(WebSiteItem webSiteItem : recommandSiteList){
 				if(webSiteItem.CallBack == ExposedAnatics.NEED_REPORT_CALL_BACK){
-					AdvertSDKManager.submitECShowURL(mContext,ExposedAnatics.POSITION_NAVIGATION_ICON,webSiteItem.AdSourceId);
+//					AdvertSDKManager.submitECShowURL(mContext,ExposedAnatics.POSITION_NAVIGATION_ICON,webSiteItem.AdSourceId);
 				}
 			}
 		}

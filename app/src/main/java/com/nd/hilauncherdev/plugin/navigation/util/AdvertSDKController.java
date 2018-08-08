@@ -12,6 +12,7 @@ import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.http.DownloadState;
 import com.nd.hilauncherdev.plugin.navigation.http.LauncherHttpCommon;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -54,7 +55,7 @@ public class AdvertSDKController {
 	 */
 	public static void init(Context context,String channel){
 
-		AdvertSDKManager.init(context,Integer.valueOf( LauncherHttpCommon.getPid()), channel);
+//		AdvertSDKManager.init(context,Integer.valueOf( LauncherHttpCommon.getPid()), channel);
 
 		if(mProgressReceiver == null){
 			mProgressReceiver = new BroadcastReceiver(){
@@ -67,9 +68,9 @@ public class AdvertSDKController {
 						for (String key : downloadAdvertMap.keySet()) {
 							if ((id != null && id.contains(key)) || (url != null && url.contains(key))) {
 								if (CommonGlobal.isDianxinLauncher(context)) {
-									AdvertSDKManager.submitFinishDownloadEvent(context, downloadAdvertMap.get(key),CommonGlobal.DIANXIN_LAUNCHER_PKG_NAME);
+//									AdvertSDKManager.submitFinishDownloadEvent(context, downloadAdvertMap.get(key),CommonGlobal.DIANXIN_LAUNCHER_PKG_NAME);
 								}else {
-									AdvertSDKManager.submitFinishDownloadEvent(context, downloadAdvertMap.get(key),CommonGlobal.PKG_NAME);
+//									AdvertSDKManager.submitFinishDownloadEvent(context, downloadAdvertMap.get(key),CommonGlobal.PKG_NAME);
 								}
 								downloadAdvertMap.remove(key);
 								break;
@@ -107,7 +108,8 @@ public class AdvertSDKController {
 	 * @return
 	 */
 	public static List<AdvertInfo> getAdvertInfos(Context ctx, String pos, int width, int height) {
-		return AdvertSDKManager.getAdvertInfos(ctx, pos);
+//		return AdvertSDKManager.getAdvertInfos(ctx, pos);
+		return new ArrayList<AdvertInfo>();
 	}
 	
 	/**
@@ -118,7 +120,7 @@ public class AdvertSDKController {
 	 * @param adverInfo
 	 */
 	public static void submitShowEvent(final Context act, final Handler mHandler, final AdvertInfo adverInfo){
-		AdvertSDKManager.submitShowEvent(act, mHandler, adverInfo);
+//		AdvertSDKManager.submitShowEvent(act, mHandler, adverInfo);
 	}
 	
 	/**
@@ -129,7 +131,7 @@ public class AdvertSDKController {
 	 * @param adverInfo
 	 */
 	public static void submitClickEvent(final Context act, final Handler mHandler, final AdvertInfo adverInfo){
-		AdvertSDKManager.submitClickEvent(act, mHandler, adverInfo);
+//		AdvertSDKManager.submitClickEvent(act, mHandler, adverInfo);
 	}
 	
 	/**
@@ -142,9 +144,9 @@ public class AdvertSDKController {
 	 */
 	public static void submitStartDownloadEvent(Context ctx, AdvertInfo adverInfo, String downLoadKey){
 		if (CommonLauncherControl.DX_PKG) {
-			AdvertSDKManager.submitStartDownloadEvent(ctx, adverInfo,CommonGlobal.DIANXIN_LAUNCHER_PKG_NAME);
+//			AdvertSDKManager.submitStartDownloadEvent(ctx, adverInfo,CommonGlobal.DIANXIN_LAUNCHER_PKG_NAME);
 		}else {
-			AdvertSDKManager.submitStartDownloadEvent(ctx, adverInfo,CommonGlobal.PKG_NAME);
+//			AdvertSDKManager.submitStartDownloadEvent(ctx, adverInfo,CommonGlobal.PKG_NAME);
 		}
 		downloadAdvertMap.put(downLoadKey, adverInfo);
 	}
@@ -156,7 +158,7 @@ public class AdvertSDKController {
 	 * @param resId
 	 */
 	public static void submitECShowURL(Context context,int modelId,int resId){
-		AdvertSDKManager.submitECShowURL(context,modelId,resId);
+//		AdvertSDKManager.submitECShowURL(context,modelId,resId);
 	}
 
 	public static void unregisterReceiver(Context context) {

@@ -207,7 +207,7 @@ public class NewsListViewAdapter extends AbsListViewAdapter<News, NewsListViewAd
         int adcount = (position + 2) / AD_POSITION;
         if ((position + 2) % AD_POSITION == 0 && adcount > 0 && adcount <= mADList.size()) {
             AdvertSDKManager.AdvertInfo info =advertInfos.get(adcount - 1);
-            AdvertSDKManager.submitShowEvent(mContext, mHandle, info);
+//            AdvertSDKManager.submitShowEvent(mContext, mHandle, info);
 
             if (info.eventId != null) {
                 if (!mAdMap.containsKey(info.eventId)) {
@@ -683,7 +683,8 @@ public class NewsListViewAdapter extends AbsListViewAdapter<News, NewsListViewAd
         ThreadUtil.executeMore(new Runnable() {
             @Override
             public void run() {
-                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(NavigationView2.activity, AnalyticsConstant.NEWS_PAGE_AD_POSITION);
+//                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(NavigationView2.activity, AnalyticsConstant.NEWS_PAGE_AD_POSITION);
+                final List<AdvertSDKManager.AdvertInfo> ads = new ArrayList<AdvertSDKManager.AdvertInfo>();
                 //Log.e("zhou", "广告数据=" + ads.size());
                 mHandle.post(new Runnable() {
                     @Override
@@ -770,7 +771,8 @@ public class NewsListViewAdapter extends AbsListViewAdapter<News, NewsListViewAd
      * 加载广告
      */
     public void loadAD() {
-        final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(NavigationView2.activity, AnalyticsConstant.NEWS_PAGE_AD_POSITION);
+//        final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(NavigationView2.activity, AnalyticsConstant.NEWS_PAGE_AD_POSITION);
+        final List<AdvertSDKManager.AdvertInfo> ads = new ArrayList<AdvertSDKManager.AdvertInfo>();
         Log.e("zhou", "loadAD 广告数据=" + ads.size());
         mHandle.post(new Runnable() {
             @Override

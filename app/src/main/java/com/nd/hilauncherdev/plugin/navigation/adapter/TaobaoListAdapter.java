@@ -501,7 +501,8 @@ public class TaobaoListAdapter extends AbsListViewAdapter<List<TaobaoProduct>, T
         ThreadUtil.executeMore(new Runnable() {
             @Override
             public void run() {
-                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(mContext, "27");
+//                final List<AdvertSDKManager.AdvertInfo> ads = AdvertSDKManager.getAdvertInfos(mContext, "27");
+                final List<AdvertSDKManager.AdvertInfo> ads = new ArrayList<AdvertSDKManager.AdvertInfo>();
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
@@ -548,7 +549,7 @@ public class TaobaoListAdapter extends AbsListViewAdapter<List<TaobaoProduct>, T
                 @Override
                 public void onClick(View v) {
                     if (targetAd != null) {
-                        AdvertSDKManager.submitClickEvent(mContext, mHandler, targetAd);
+//                        AdvertSDKManager.submitClickEvent(mContext, mHandler, targetAd);
                         CvAnalysis.submitClickEvent(mContext.getApplicationContext(), CvAnalysisConstant.TAOBAO_SCREEN_PAGEID, CvAnalysisConstant.TAOBAO_SCREEN_POS_BANNER, targetAd.id, CvAnalysisConstant.RESTYPE_ADS);
                         Intent intent = new Intent();
                         intent.setClass(mContext, NewsDetailActivity.class);
@@ -603,7 +604,7 @@ public class TaobaoListAdapter extends AbsListViewAdapter<List<TaobaoProduct>, T
                         if (imageDrawable != null && targetAd.picUrl.equals(imageUrl)) {
                             if (isPageVisible) {
                                 Log.d(TAG, "banner setBannerContent : visible : true");
-                                AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
+//                                AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
                             }
                             CvAnalysis.submitShowEvent(mContext.getApplicationContext(), CvAnalysisConstant.TAOBAO_SCREEN_PAGEID, CvAnalysisConstant.TAOBAO_SCREEN_POS_BANNER, targetAd.id, CvAnalysisConstant.RESTYPE_ADS);
                             calculateMatrix(mBannerImage, imageDrawable, 0);
@@ -618,7 +619,7 @@ public class TaobaoListAdapter extends AbsListViewAdapter<List<TaobaoProduct>, T
                 } else {
                     if (isPageVisible) {
                         Log.d(TAG, "banner setBannerContent : visible : true");
-                        AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
+//                        AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
                     }
                     CvAnalysis.submitShowEvent(mContext.getApplicationContext(), CvAnalysisConstant.TAOBAO_SCREEN_PAGEID, CvAnalysisConstant.TAOBAO_SCREEN_POS_BANNER, targetAd.id, CvAnalysisConstant.RESTYPE_ADS);
                     calculateMatrix(mBannerImage, drawable, 0);
@@ -690,7 +691,7 @@ public class TaobaoListAdapter extends AbsListViewAdapter<List<TaobaoProduct>, T
         } else {
             if (targetAd != null) {
                 Log.d(TAG, "banner notifyPageChanged : visible : " + visible);
-                AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
+//                AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
             } else {
                 loadBanner();
             }
@@ -704,7 +705,7 @@ public class TaobaoListAdapter extends AbsListViewAdapter<List<TaobaoProduct>, T
                 if (visibleRect.left >= 0 && visibleRect.top > 0) {
                     if (targetAd != null) {
                         //Log.d(TAG, "banner notifyVisibleRectChanged : visible : true");
-                        AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
+//                        AdvertSDKManager.submitShowEvent(mContext, mHandler, targetAd);
                     }
                 }
             }

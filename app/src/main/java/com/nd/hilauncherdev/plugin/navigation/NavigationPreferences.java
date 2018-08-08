@@ -3,7 +3,6 @@ package com.nd.hilauncherdev.plugin.navigation;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.nd.hilauncherdev.plugin.navigation.pluginAD.ChannelUtil;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
 import com.nd.hilauncherdev.plugin.navigation.util.LauncherBranchController;
 import com.nd.hilauncherdev.plugin.navigation.util.SettingsConstants;
@@ -414,29 +413,6 @@ public class NavigationPreferences {
 						INDEX_PAGE_NONE,
 						INDEX_PAGE_NONE
 				};
-			}
-
-			if (ChannelUtil.isSEMChannel(context)) {
-				boolean isNewUser = (versionCodeFrom == -1) || (versionCodeFrom >= 8618);
-				if (isNewUser) {
-					if (TelephoneUtil.getApiLevel() > 14) {
-						return new int[]{
-								INDEX_PAGE_NAVIGATION,
-								INDEX_PAGE_TAOBAO,
-								INDEX_PAGE_WEB,
-								INDEX_PAGE_SOHU,
-								INDEX_PAGE_NONE
-						};
-					} else {
-						return new int[]{
-								INDEX_PAGE_NAVIGATION,
-								INDEX_PAGE_TAOBAO,
-								INDEX_PAGE_WEB,
-								INDEX_PAGE_NEWS,
-								INDEX_PAGE_NONE
-						};
-					}
-				}
 			}
 
 			if(TelephoneUtil.getApiLevel() > 14){
