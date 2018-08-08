@@ -21,6 +21,7 @@ import com.nd.hilauncherdev.plugin.navigation.Card;
 import com.nd.hilauncherdev.plugin.navigation.CardManager;
 import com.nd.hilauncherdev.plugin.navigation.CommonLauncherControl;
 import com.nd.hilauncherdev.plugin.navigation.R;
+import com.nd.hilauncherdev.plugin.navigation.net.UrlConstant;
 import com.nd.hilauncherdev.plugin.navigation.util.AsyncImageLoader;
 import com.nd.hilauncherdev.plugin.navigation.util.BitmapUtils;
 import com.nd.hilauncherdev.plugin.navigation.util.CommonGlobal;
@@ -90,7 +91,7 @@ public class CardAddSubAct extends BaseActivity {
 		cardIV = (ImageView) findViewById(R.id.navi_card_detail_ic);
 		cardIV.setImageResource(CommonLauncherControl.getJrttNewBigBackgroad());
 		if (mCard.type == CardManager.CARD_STAR_TYPE) {
-			mCard.bigImgUrl = "http://pic.ifjing.com/rbpiczy/pic/2016/03/11/60a33728f3184b399e657ee9fccebb52.png";
+			mCard.bigImgUrl = UrlConstant.HTTP_PIC_IFJING_COM+"rbpiczy/pic/2016/03/11/60a33728f3184b399e657ee9fccebb52.png";
 		}
 
 		final int width = ScreenUtil.getCurrentScreenWidth(mContext) - ScreenUtil.dip2px(mContext, 20);
