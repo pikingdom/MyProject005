@@ -1,7 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 14
+    compileSdkVersion 23
+    useLibrary 'org.apache.http.legacy'
     lintOptions{
         checkReleaseBuilds false
         abortOnError false
@@ -12,11 +13,11 @@ android {
         useNewCruncher false
     }
     defaultConfig {
-        applicationId "com.example.administrator.myzero"
-        minSdkVersion 8
-        targetSdkVersion 8
-        versionCode 1
-        versionName "1.0"
+        applicationId "com.nd.hilauncherdev.plugin.navigation"
+        minSdkVersion 16
+        targetSdkVersion 16
+        versionCode 100
+        versionName "100.0"
         multiDexEnabled false
         buildConfigField "boolean", "NAVIGATION_FOR_CUSTOM_LAUNCHER", "true"
     }

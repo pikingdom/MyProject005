@@ -709,7 +709,7 @@ public abstract class CommonSlidingView extends ViewGroup implements OnClickList
 			/**
 			 * 更新指示灯
 			 */
-			int moveToScreen = (int) FloatMath.floor((getScrollX() + (pageWidth / 2)) / (float) pageWidth);
+			int moveToScreen = (int) Math.floor((getScrollX() + (pageWidth / 2)) / (float) pageWidth);
 			mNextScreen = moveToScreen;
 			if (lightbar != null) {
 				if (isDataLock) {
@@ -788,7 +788,7 @@ public abstract class CommonSlidingView extends ViewGroup implements OnClickList
 
 					int velocityX = (int) mVelocityTracker.getXVelocity();
 
-					int whichScreen = (int) FloatMath.floor((getScrollX() + (pageWidth / 2)) / (float) pageWidth);
+					int whichScreen = (int) Math.floor((getScrollX() + (pageWidth / 2)) / (float) pageWidth);
 					final float scrolledPos = (float) getScrollX() / pageWidth;
 
 					if (isDataLock) {
